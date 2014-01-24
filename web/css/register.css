@@ -1,0 +1,300 @@
+body {
+    /*overflow: auto;/**/
+}
+.design_template {
+    width: 2048px;
+    height: 1280px;
+}
+/**/
+#register_wrapper2 {
+    /* display:none;*/
+    box-shadow: 0 0 10px 3px rgba(220, 220, 220, 0.7);
+    background-color: white;
+    height: 1016px;
+    left: 99px;/**/
+    left: 0px;/**/
+    position: absolute;
+    top: 54px;/**/
+    top: 0px;/**/
+    width: 1362px;
+}
+
+#register_wrapper2  .vip {
+    display: none;
+}
+#register_data form {
+    font-family: "Futura Book";
+    background-color: #e8e8e8;
+    color: black;
+    height: 92.7%;
+    position: absolute;
+    right: 2%;
+    text-align: justify;
+    top: 3.5%;
+    white-space: nowrap;
+    width: 61%;
+}
+#register_data h1 {
+    font-family: "franklin gothic demi";
+    font-size: 2.5em;
+    position: absolute;
+    left: 6.5%;
+    top: 0.8%;
+}
+#register_data h1.vip {
+    display: none;
+}
+
+#register_data .input_wrapper {
+    position: relative;
+    top: 13%;
+}
+#register_data ul {
+    display: inline-block;
+    height: auto;
+    left: 3.5%;
+    list-style: none outside none;
+    padding: 0;
+    position: relative;
+    vertical-align: top;
+    margin-right: 3%;
+}
+#register_data li {
+    font-size: 1.75em;
+    line-height: 1.5;
+    position: relative;
+    white-space: nowrap;
+}
+#register_data ul.input_title {
+    vertical-align: middle;
+    width: 28%;
+    font-family: "Futura Book";
+    text-align: right;
+    cursor: default;
+}
+#register_data ul.input_title li {
+    margin-bottom: 11%;
+}
+#register_data ul.input_title .certificate {
+    margin: 15% 0;
+}
+#register_data ul.input_title .hint {
+    position: absolute;
+    top: 75%;
+    color: red;
+    font-size: 0.7em;
+    width: 100%;
+    font-weight: lighter;
+}
+#register_data ul.input {
+    width: 60.8%;
+}
+#register_data ul.input li {
+    margin-bottom: 5%;
+}
+#register_data ul.input li.certificate {
+    margin-bottom: 2%;
+    position: relative;
+    top: -18%;
+    font-size: 1.5em;
+}
+#register_data ul.input input {
+    height: 45%;
+    width: 98.5%;
+    box-shadow: 0 0 2px 1px rgba(161, 158, 154, 0.9);
+}
+
+#register_data .input div.certificate {
+    position: relative;
+    vertical-align: text-bottom;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+#register_data input[type="checkbox"] {
+    display: none;
+}
+#register_data label {
+    height: 37px;
+    width: 235px;
+    display: inline-block;
+    position: relative;
+}
+span.checkbox {
+    background-color: white;
+    box-shadow: 0 0 3px 3px rgba(180, 180, 180, 0.8) inset;
+    display: inline-block;
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+span.checkbox img {
+    position: absolute;
+    height: 90%;
+    display: none;
+}
+div.checkbox.text {
+    position: absolute;
+    left: 30px;
+    display: inline;
+    vertical-align: middle;
+}
+input[type="checkbox"]:checked + label span.checkbox img.checked {
+    display: block;
+}
+
+#register_data label div.hint.certificate {
+    font-size: 0.75em;
+    position: absolute;
+    top: 192%;
+    left: 25%;
+}
+#register_data label img.hint.certificate {
+    font-size: 0.75em;
+    left: 0;
+    position: absolute;
+    top: 119%;
+    width: 19%;
+}
+
+#register_data img.certificate {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+}
+#register_data img.certificate.mail {
+    bottom: 10%;
+    left: 45%;
+    width: 21%;
+}
+#register_data img.certificate.phone {
+    bottom: 11%;
+    left: 45%;
+    width: 12%;
+}
+#register_data span.checkbox, #register_data div.checkbox.text {
+    top: 28%;
+}
+#register_data div.checkbox.text {
+    top: 17%;
+}
+
+#register_data img.member_type {
+    bottom: 6.8%;
+    height: 42%;
+    left: 2.3%;
+    position: absolute;
+}
+#register_data button.submit {
+    background-color: #0098DE;
+    border: 0 none;
+    border-radius: 5% 5% 5% 5%;
+    bottom: 3.5%;
+    color: white;
+    display: block;
+    font-family: "Futura Oblique";
+    font-size: 1.65em;
+    height: 5%;
+    position: absolute;
+    right: 7%;
+    width: 14.3%;
+}
+#register_data .other_account {
+    bottom: 8.5%;
+    height: 8.35%;
+    left: 32%;
+    position: absolute;
+    width: 35%;
+    cursor: default;
+}
+#register_data h2 {
+    font-size: 1.8em;
+    font-weight: normal;
+    left: -67%;
+    position: absolute;
+    top: 2%;
+}
+#register_data .other_account button {
+    border: 0 none;
+    margin: 4% 4% 0 -3%;
+    width: 26%;
+    background-color: transparent;
+}
+#register_data .other_account img {
+    width: 100%;
+}
+
+#register_data .a {
+    color: #2ca6de;
+    cursor: pointer;
+}
+#register_data .confirm_contract {
+    bottom: 3%;
+    left: 8.5%;
+    position: absolute;
+}
+#register_data  .confirm_contract div.text {
+    left: 13.5%;
+    position: absolute;
+    top: 23%;
+    cursor: default;
+}
+
+#member_type_img {
+    bottom: 8%;
+    height: 42%;
+    left: 2.3%;
+    position: absolute;
+    width: 32%;
+}
+#member_type_img img {
+    position: absolute;
+}
+#member_type_img .general {
+    height: 100%;
+}
+#member_type_img .vip {
+    bottom: 0;
+    height: 92.5%;
+    left: 4.5%;
+    display: none;
+}
+
+#contract {
+    background-color: #E8E8E8;
+    color: black;
+    display: none;
+    font-size: 1.25em;
+    height: 93%;
+    left: 2%;
+    padding: 0 2% 0 4%;
+    position: absolute;
+    top: 3.5%;
+    width: 90%;
+    z-index: 11;
+}
+
+#contract ol {
+    list-style-type: upper-roman;
+    padding-left: 3.2%;
+    font-size: 1.4em;
+}
+#contract li {
+    line-height: 1.5em;
+    margin-bottom: 1%;
+}
+
+#contract button {
+    background-color: #0098DE;
+    border: 0 none;
+    border-radius: 5% 5% 5% 5%;
+    bottom: 3%;
+    color: white;
+    display: block;
+    font-family: "Futura Oblique";
+    font-size: 1.32em;
+    height: 5%;
+    position: absolute;
+    right: 2.2%;
+    width: 14.3%;
+}

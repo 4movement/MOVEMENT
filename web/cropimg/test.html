@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+<body>
+	
+	<form>
+		<fieldset>
+			<legend>圖片上傳</legend>
+				<div id="queue"></div>
+				<input type="file" name="file" id="pic_upload"/><br />
+				<a id="uploadLink" href="javascript:$('#pic_upload').uploadifyUpload();">上傳圖片</a>		
+				<div id="uploadInfo"></div>
+		</fieldset>
+	</form>
+	
+	<div id="twoColLayout">
+		<div id="primaryContent">
+			<div>
+				<h3>圖片預覽</h3>
+				<button id="initCrop">加載剪框</button>
+				
+				<div id="oriImage" class="img_v">
+					
+				</div>
+				
+				
+			</div>
+			
+			<div>
+				剪裁結果
+			</div>
+			
+			
+			<div id="cropResult" class="cbb">
+				
+			</div>
+			
+			
+		</div>
+		
+		
+		<div id="sideContent">
+			剪裁預覽
+			
+			<div id="preview">
+				
+				
+			</div>
+			<form id="cropData">
+				<input type="submit" name="submit" id="crop" value="剪裁" />
+			</form>
+			
+		</div>
+	</div>
+		
+</body>
+	
+	
+	<link type="text/css" rel="stylesheet" href="imgselect/css/imgareaselect-default.css"/>
+	<link type="text/css" rel="stylesheet" href="uploadify/uploadify.css"/>
+	
+	
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="imgselect/scripts/jquery.imgareaselect.pack.js"></script>
+	<script type="text/javascript" src="uploadify/jquery.uploadify.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//uploadify設置
+			$("#pic_upload").uploadify({
+				"swf": "uploadify/uploadify.swf",
+				//"uploader" : "uploadify/uploadify.swf", 
+				"uploader" : "process.php", 
+				"script" : "process.php", 
+				"cancelImg" : "uploadify/cancel.png", 
+				
+				"onComplete": function(event,ID,fileObj,response,data){
+					json_str=JSON.parse(response);
+					var maSize=400;
+					var width=json_str.width;
+					var height=json_str.height;
+					var scale=json_str.scale;
+					if(json_str.code==0){
+						$("#uploadInfo").html(json_str.message+"<br />平均上傳速度:"+data.speed.toFied(2)+"Kb/s");
+					 if(json_str.width > maxSize || json_str.height >maxSize){
+					 	if( json_str.width > json_str.height){
+					 		width = maxSize;
+					 		height = maxSize / json_str.width * json_str.height;
+					 		json_str.scale = maxSize / json_str.width;
+					 	}
+					 	else{
+					 		height = maxSize;
+					 		width = maxSize / json_str.height * json_str.width;
+					 		json_str.scale = maxSize / json_str.height;
+					 	}
+					 }
+					 $('#oriImage').html('<img src="/'+json_str.path+'" width=+'+width+' height='+height+' />');            
+
+            		//同時插入預覽圖
+
+             		$('#preview').empty().html('<img src="/'+json_str.path+'" width=+'+width+' height='+height+' />').css({
+                    	overflow:'hidden',
+                    	width:'150px',
+                    	height:'150px'
+             		});                         
+
+        			}
+        			
+        			else{
+            			$('#uploadInfo').html(' 錯誤代碼['+json_str.code+']:<p>'+json_str.message+'</p>');
+        			}
+				}
+			});
+			
+			//加載裁剪框
+        		$('#initCrop'). click (function(e){
+        			ias=$('#oriImage img').imgAreaSelect({instance:true});
+        			ias.setOptions({ 
+        					aspectRatio: '1:1', handle:true,
+                    		hide:false,
+                    		onSelectChange :preview2,
+                            onSelectEnd: function (img, selection) {
+                                    json_str.x1=selection.x1;
+                                    json_str.y1=selection.y1;
+                                    json_str.cropWidth=selection.x2-selection.x1;
+                                    json_str.cropHeight=selection.y2-selection.y1;
+                            },
+                    });                    
+
+        		});
+        		
+        		// 裁剪動作，將數據傳給服務器，同時ajax 返回圖片
+    			$("#crop").click(function(e){
+			        if(!(typeof json_str == 'undefined')){ 
+			        	jsondata='data='+JSON.stringify(json_str);
+	                    $. ajax ({
+                            type:"POST",
+                            url:"crop.php",
+                            data:jsondata,//$('#cropData').serialize(),
+                            success :function(msg){
+                                $("#cropResult").html('<img src="/'+msg+'"/>');// 成功之後就清除發表內容
+                                //$("#cropResult").html(msg);                                                        
+                            }            
+                        });
+	                }
+                	else{
+	                    alert('please load image first');
+	                }
+    	    		// 關閉默認的提交動作    
+	                return false;
+	            });
+			
+			
+		})
+		
+		// 圖像預覽函數
+	    function preview2 (img, selection) {
+	    	realWidth=json_str.width * json_str.scale;
+	        realHeight=json_str.height * json_str.scale;
+	        sizeWidth=150;sizeHeight=150;
+	        var scaleX = sizeWidth / selection.width ;
+	        var scaleY = sizeHeight / selection.height ;
+	        $('#preview img').css({
+	            width: Math.round(scaleX * realWidth) + 'px',
+	            height: Math.round(scaleY * realHeight) + 'px',
+	            marginLeft: - Math.round(scaleX * selection.x1) + 'px',
+	            marginTop: -Math.round(scaleY * selection.y1) + 'px'
+	        });
+	    };
+		
+	
+		
+		
+	</script>
+	
+	
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Movement</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/register.css">
+    </head>
+
+    <body>
+
+        <!--<img src = "img/login/lo-in03.jpg" class = "design_template"/>-->
+
+        <div id="register_wrapper2" class="wrapper2">
+            <div id = "register_data">
+                <form>
+                    <h1 class= "general"> General Members </h1>
+                    <h1 class = "vip">VIP Member</h1>
+
+                    <div class = "input_wrapper">
+                        <ul class = "input_title">
+                            <li class = "id required">
+                                ID*
+                                <div class = "hint"></div>
+                            </li>
+                            <li class = "password required">
+                                Password*
+                                <div class = "hint"></div>
+                            </li>
+                            <li class = "repeat_password required">
+                                Repeat Password*
+                                <div class = "hint"></div>
+                            </li>
+                            <li class = "real_name">
+                                Real Name
+                                <div class = "hint"></div>
+                            </li>
+                            <li class = "nick">
+                                Nickname
+                                <div class = "hint"></div>
+                            </li>
+                            <li class = "mail required">
+                                E-mail Address*
+                                <div class = "hint"></div>
+                            </li>
+                            <li class = "phone vip">
+                                Phone No.
+                                <div class = "hint"></div>
+                            </li>
+                            <li class = "certificate">
+                                Certificate
+                            </li>
+                        </ul>
+                        <ul class = "input">
+                            <li class = "id required">
+                                <input type="text" name = "id"  placeholder="請輸入4字以上帳號ID"/>
+                            </li>
+                            <li class = "password required">
+                                <input type="password" name = "password"  placeholder="請輸入4字以上帳號密碼"/>
+                            </li>
+                            <li class = "repeat_password required">
+                                <input type="password" name = "repeat_password"  placeholder="請重複輸入密碼"/>
+                            </li>
+                            <li class = "real_name">
+                                <input type="text" name = "real_name" placeholder="請輸入真實姓名"/>
+                            </li>
+                            <li class = "nick">
+                                <input type="text" name = "nick" placeholder="請輸入暱稱"/>
+                            </li>
+                            <li class = "mail required">
+                                <input type="email" name = "email"  placeholder="請輸入 Email 地址"/>
+                            </li>
+                            <li class = "phone vip">
+                                <input type="text" name = "phone" placeholder="Ex: +886-9xx-xxxxxx"/>
+                            </li>
+                            <li class = "certificate">
+                                <div class = "mail certificate">
+                                    <input type="checkbox" id="mail_certificate_reg" name="mail_certificate" checked="checked" disabled="disabled"/>
+                                    <label for="mail_certificate_reg" class = "checkbox"> <span class = "checkbox"> <img class="checkbox checked" src = "img/login/button/v-icon.png" /> </span>
+                                        <div class = "text checkbox">
+                                            E-mail
+                                        </div> <img src ="img/login/button/mail-icon01.png"  class = "mail certificate"/></label>
+                                </div>
+                                <div class = "phone certificate">
+                                    <input type="checkbox" id="phone_certificate_reg" name="phone_certificate" />
+                                    <label for="phone_certificate_reg" class = "checkbox phone"> <span class = "checkbox"> <img class="checkbox checked" src = "img/login/button/v-icon.png" /> </span>
+                                        <div class = "text checkbox">
+                                            Phone
+                                        </div> <img src ="img/login/button/phone-icon.png"  class = "phone certificate"/>
+                                        <div class = "hint certificate">
+                                            透過手機認證</br>
+                                            獲得發起活動的權力
+                                        </div><img src ="img/login/button/narr.png"  class = "hint certificate"/></label>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <button class = "submit">
+                        Submit
+                    </button>
+                    <div class = "confirm_contract">
+                        <input type="checkbox" id="confirm_contract_reg" name="confirm_contract" />
+                        <label for="confirm_contract_reg" class = "checkbox"> <span class = "checkbox"> <img class="checkbox checked" src = "img/login/button/v-icon.png" /> </span> </label>
+                        <div class = "text checkbox">
+                            我已詳閱並同意<span class = "a">會員條款</span>
+                        </div>
+                    </div>
+
+                    <div class = "other_account">
+                        <h2>Sign up with</h2>
+                        <button type="button" class = "facebook"><img src = "img/login/button/accf-icon.png" />
+                        </button>
+                        <button type="button" class = "twitter"><img src = "img/login/button/acct-icon.png" />
+                        </button>
+                        <button type="button" class = "google+"><img src = "img/login/button/accg-icon.png" />
+                        </button>
+                    </div>
+                </form>
+            </div><!--register_data-->
+            <div id = "member_type_img">
+                <img src = "img/login/button/membertype01-2.png" class = "general">
+                <img src="img/login/button/membertype03-2.png" class="vip" />
+            </div>
+            <div id= "contract">
+                <h1> Movement網站服務條款 </h1>
+                <h2> 使用者於本站註冊即代表同意遵守下列所有項目 </h2>
+                <ol>
+                    <li>
+                        Movement為社會群眾運動之資訊整合平台，期望大家能藉此平台得知社會群眾運動之訊息。
+                    </li>
+                    <li>
+                        發言時必需尊重他人，不得發表毀謗他人、人身攻擊、族群歧視、蓄意挑釁及任何違反法律或善良風俗及之言論。
+                    </li>
+                    <li>
+                        若有發現違反本站宗旨或偏離主題的言論，管理人員有權不經事先告知，直接對您的發言做編修或刪除。
+                    </li>
+                    <li>
+                        如對管理人員編修或刪除您發起的活動／文章的行為有所疑慮時，請聯絡我們。如使用者於公開版面中討論站務管理問題將視同離題文章處理之。
+                    </li>
+                    <li>
+                        經管理人員認定不遵守本站規定或不適應站內文化者，管理人員有權做出刪除帳號或禁止發表等必要處分。
+                    </li>
+                    <li>
+                        未經當事人同意不得公佈他人隱私資料於本站，例如姓名、地址、電話等任何不利於他人之言論與指涉。無論是否屬實，發文者須自負法律責任。
+                    </li>
+                    <li>
+                        本守則得由管理人員隨時增訂編修，即刻生效並朔及既往。不同意新條文者須於三日內自行刪除於本站內發表之文章。
+                    </li>
+                    <li>
+                        使用者於本站註冊即代表同意遵守本守則中所有項目，不同意者請勿註冊。
+                    </li>
+                </ol>
+                <button class = "confirm">確定</button>
+            </div>
+        </div>
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+        <script src="js/plugins.js"></script>
+
+        <script src="js/register.js"></script>
+
+    </body>
+
+</html>

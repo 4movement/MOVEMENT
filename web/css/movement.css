@@ -1,0 +1,1164 @@
+#movement {
+    /* width:100%;
+     /*height:100%;*/
+    background-color: white;
+}
+
+#movement_gallery_wrapper {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /*display: none;/**/
+}
+
+#movement > .mask {
+    position: fixed;
+}
+/*thumb image and short intro of movement*/
+#movement_gallery {
+    background-color: transparent;
+    bottom: 15%;
+    height: 75%;
+    left: 0;
+    margin: 0;
+    /*overflow: hidden;/**/
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#movement_gallery > button {
+    background-color: gray;
+    border: 0 none;
+    height: 20%;
+    width: 73px;
+    padding: 0;
+    position: absolute;
+    top: 40%;
+    opacity: 0.3;
+    z-index: 7;
+}
+#movement_gallery > button:hover {
+    opacity: 0.7;
+}
+#movement_gallery > button.left {
+    left: 2%;
+}
+#movement_gallery > button.right {
+    right: 2%;
+}
+#movement_gallery button img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+}
+#movement_gallery button.left img {
+    left: 0;
+}
+#movement_gallery button.right img {
+    right: 0;
+}
+#movement_gallery button img.disabled {
+    display: none;
+    z-index: 2;
+}
+#movement_gallery button:disabled img.disabled, #movement_gallery button.disabled img.disabled {
+    display: block;
+}
+
+#movement_gallery .gallery_line {
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+#movement_gallery .gallery_line.past {
+    left: 5%;
+}
+#movement_gallery .gallery_line.future {
+    left: -95%;
+}
+.movement_thumb .photo {
+    height: 100%;
+    margin: 0;
+}
+.movement_thumb_wrapper {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    padding: 0%;
+    height: 41.67%;
+    width: 375px;
+    /*display: none;/**/
+    opacity: 0;
+}
+.gallery_line.past .movement_thumb_wrapper.test {
+    left: 306px;
+    width: 372px;
+    opacity: 1;/**/
+}
+.movement_thumb_wrapper.test {
+    /*display: none;/**/
+}
+.gallery_line.past .movement_thumb_wrapper {
+    left: 0;
+}
+.gallery_line.future .movement_thumb_wrapper {
+    right: 0;
+}
+.movement_thumb_wrapper.display {
+    /*display: block;/**/
+    z-index: 1;
+}
+.movement_thumb {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.movement_thumb .loading_mask {
+    background-color: yellowgreen;
+    color: black;
+    font-size: 1.2em;
+    height: 100%;
+    line-height: 225px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.movement_thumb .black_triangle {
+    display: none;
+}
+.movement_thumb .text {
+    background-color: rgba(0,0,0,0.7);
+    bottom: 0;
+    color: white;
+    font-size: 1.1em;
+    height: 25%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    white-space: nowrap;
+}
+.movement_thumb .text div {
+
+}
+.movement_thumb .date {
+    bottom: 10%;
+    font-family: "georgia";
+    font-size: 1.2em;
+    height: 50%;
+    left: 3%;
+    position: absolute;
+}
+.movement_thumb .name {
+    font-family: "Futura Oblique";
+    font-size: 0.9em;
+    height: 50%;
+    line-height: 1.75;
+    position: absolute;
+    right: 3%;
+    text-align: right;
+    text-transform: capitalize;
+    top: 1%;
+}
+.movement_thumb .location {
+    bottom: -6%;
+    font-family: "franklin gothic medium";
+    font-size: 0.92em;
+    height: 50%;
+    position: absolute;
+    right: 3%;
+    text-align: right;
+    text-transform: uppercase;
+}
+.movement_thumb .location img {
+    height: 40%;
+    position: relative;
+    top: -5%;
+}
+.movement_thumb .type {
+    bottom: -100%;
+    color: black;
+    font-family: "Fruitger LT 55 Roman";
+    font-size: 0.65em;
+    height: 100%;
+    position: absolute;
+    right: 1%;
+    text-align: right;
+}
+
+.movement_thumb .tag_icon {
+    position: relative;
+    height: 24%;
+}
+
+#movement ul.tag2 {
+    height: 27px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 36px;
+}
+#movement li.tag2 {
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#movement .tag_icon2 {
+    position: relative;
+    width: 100%;
+}
+
+.movement_thumb_wrapper ul.tag2 {
+    right: -3%;
+    top: 2%;
+}
+
+.movement_thumb_wrapper li.tag2 {
+    display: none !important;
+}
+
+.movement_thumb_wrapper.now li.tag2.now, .movement_thumb_wrapper.new li.tag2.new, .movement_thumb_wrapper.hot li.tag2.hot {
+    display: block !important;
+}
+
+.movement_thumb .intro, .movement_thumb .time, .movement_thumb .contact,.movement_thumb .publisher {
+    display: none !important;
+}
+
+/*thumb image and short intro of movement*/
+/*callender*/
+#movement_calender {
+    background: transparent;
+    bottom: 2.9%;
+    height: 7%;
+    margin: 0;
+    position: absolute;
+    width: 82%;
+    left: 9%
+}
+#movement_calender .blkbar {
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-top: 5px dashed #00a1e6;
+    top: -8%;
+}
+#movement_calender .blkbar.c {
+    border-top: 5px solid #00a1e6;
+    left:0;
+}
+#movement_calender .blkbar.l {
+    right:100%;
+}
+#movement_calender .blkbar.r {
+    left:100%;
+}
+#movement_month_list {
+    font-family: "Futura Oblique";
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 50%;
+    left: -1.3%;
+    list-style: none inside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 14%;
+    white-space: nowrap;
+    width: 100.5%;
+}
+#movement_month_list .month_list {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 7%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#movement_month_list .month_list span {
+    color: black;
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s; /* Firefox 4 */
+    -webkit-transition-duration: 0.7s; /* Safari and Chrome */
+    -o-transition-duration: 0.7s; /* Opera */
+    transition-property: top left;
+    -moz-transition-property: top left; /* Firefox 4 */
+    -webkit-transition-property: top left; /* Safari and Chrome */
+    -o-transition-property: top left; /* Opera */
+}
+#movement_month_list [month] span, #movement_month_list:hover .selected span {
+    color: black;
+    top: 0;
+    left: 7%;
+}
+#movement_month_list .selected span, #movement_month_list .month_list:hover[month] span {
+    top: -74%;
+    left: 12%;
+    color: white;
+    font-weight: bold;
+}
+#movement_month_list .month_list:not([month]):hover span {
+    top: -74%;
+    left: 1.6%;
+    color: white;
+}
+
+#movement_month_list .month_list .circle, #movement_month_list:hover .selected .circle {
+    background-color: white;
+    border: 5px solid #00A1E6;
+    border-radius: 100% 100% 100% 100%;
+    height: 35.7%;
+    left: 17%;
+    position: absolute;
+    top: -70%;
+    width: 13.5%;
+    transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s; /* Firefox 4 */
+    -webkit-transition-duration: 0.7s; /* Safari and Chrome */
+    -o-transition-duration: 0.7s; /* Opera */
+    transition-property: height width top left;
+    -moz-transition-property: height width top left; /* Firefox 4 */
+    -webkit-transition-property: height width top left; /* Safari and Chrome */
+    -o-transition-property: height width top left; /* Opera */
+}
+#movement_month_list .selected .circle, #movement_month_list .month_list:hover[month] .circle {
+    border: 5px solid #00A1E6;
+    background-color: #00A1E6;
+    height: 107.1%;
+    left: 4.5%;
+    top: -101%;
+    width: 40.54%;
+}
+#movement_month_list .month_list:not([month]) .circle {
+    background-clip: content-box;
+    background-color: #00A1E6;
+    border-color: transparent;
+    height: 42.85%;
+    left: 24%;
+    top: -74%;
+    width: 16.2%;
+}
+#movement_month_list .month_list:not([month]):hover .circle {
+    background-clip: border-box;
+    background-color: #00A1E6;
+    height: 125%;
+    left: 1%;
+    top: -110%;
+    width: 47.3%;
+}
+
+/*callender*/
+/*movement detail*/
+.movement_detail_wrapper {
+    display: none;/**/
+    background-color: white;
+    height: 56%;
+    margin: auto;
+    position: relative;
+    top: 19.75%;
+    width: 71.15%;
+    z-index: 200;
+}
+
+.movement_detail {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 65%;
+}
+.movement_detail > .mask {
+    display: block;
+    /*display: none;/**/
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.movement_detail_wrapper .photo {
+    display: block;
+    height: 100%;
+    left: 0%;
+    position: absolute;
+    top: 0%;
+    /*display: none;/**/
+}
+
+.movement_detail_wrapper .icon_list {
+    bottom: 0;
+    height: 49px;
+    left: 0;
+    position: absolute;
+    width: 65%;
+    z-index: 3;
+}
+.icon_list .icon {
+    background-color: #211613;
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    width: 20%;
+}
+.icon.join_button {
+
+}
+.icon.support_button {
+    left: 20%;
+}
+.icon.donate_button {
+    left: 40%;
+}
+.icon.issue_button {
+    left: 80%;
+}
+.icon.rate_button {
+    left: 60%;
+}
+
+.icon_list  .icon:hover {
+    background-color: #00a2e8;
+}
+.icon_list img {
+    position: absolute;
+}
+
+.icon > img {
+    height: 100%;
+    width: 100%;
+}
+.icon img.selected {
+    display: none;
+}
+.icon:hover img.normal {
+    display: none;
+}
+.icon:hover img.selected {
+    display: block;
+}
+
+.icon_list .icon_detail_number {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s; /* Firefox 4 */
+    -webkit-transition-duration: 0.7s; /* Safari and Chrome */
+    -o-transition-duration: 0.7s; /* Opera */
+    transition-property: height;
+    -moz-transition-property: height; /* Firefox 4 */
+    -webkit-transition-property: height; /* Safari and Chrome */
+    -o-transition-property: height; /* Opera */
+}
+.icon:hover .icon_detail_number {
+    height: 163.25%;
+}
+
+.icon.join_button .icon_detail_number {
+    width: 500%;
+}
+.icon.support_button .icon_detail_number {
+    width: 400%;
+}
+.icon.donate_button .icon_detail_number {
+    width: 300%;
+}
+.icon.issue_button .icon_detail_number {
+    width: 0%;
+}
+.icon.rate_button .icon_detail_number {
+    width: 200%;
+}
+
+.icon_detail_number .text {
+    position: absolute;
+    background-color: #00a2e8;
+    width: 100%;
+    height: 72px;
+    padding: 8px 0 0 16px;
+    bottom: 0%;/**/
+}
+.icon.rate_button .text {
+    /* width: 150px;
+     padding: 10px 0 0 20px;*/
+}
+.icon_detail_number .number {
+    font-family: "Candara";
+    font-size: 1.6em;
+    line-height: 1.5;
+}
+.icon_detail_number .unit {
+    font-family: "franklin gothic medium";
+    font-size: 1em;
+    line-height: 1.3;
+    margin: 4px 4px;
+}
+
+.movement_detail_wrapper div.member_photo {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 94%;
+}
+.movement_detail_wrapper p.member_photo {
+    font-size: 0.85em;
+    left: 38%;
+    line-height: 1.3;
+    margin: 0;
+    position: absolute;
+    top: 13%;
+    width: 25%;
+}
+.movement_detail_wrapper img.member_photo {
+    bottom: 18%;
+    height: 74%;
+    left: 5.5%;
+}
+
+.movement_detail_wrapper div.share_link {
+    position: absolute;
+    height: 80px;
+    right: 0;
+    top: 0;
+    white-space: nowrap;
+}
+.movement_detail_wrapper img.share_link {
+    position: relative;
+    height: 100%;
+    float: right;
+}
+
+.movement_detail .text {
+    /*color: red;/**/
+    height: 82.5%;
+    left: 0;
+    line-height: 1.2;
+    padding: 2.5% 4.25%;
+    position: absolute;
+    top: 0;
+    width: 91.5%;
+    z-index: 2;
+}
+
+.movement_detail .date {
+    font-family: "georgia";
+    font-size: 3em;
+    margin-top: 0;
+}
+.movement_detail .name {
+    font-family: "Futura Oblique";
+    font-size: 1.75em;
+    margin-top: 0.2%;
+    line-height: 1.2;
+}
+.movement_detail .location {
+    font-family: "franklin gothic medium";
+    font-size: 1.32em;
+    margin-top: 0;
+    line-height: 0.8;
+    text-transform: capitalize;
+}
+.movement_detail .intro_wrapper {
+    background-color: transparent;
+    bottom: 3%;
+    height: 62%;
+    position: absolute;
+    width: 91.5%;
+}
+.movement_detail .intro {
+    height: auto;
+    height: 49%;
+}
+.movement_detail h1 {
+    font-family: "franklin gothic medium";
+    font-size: 1.4em;
+    font-weight: normal;
+    line-height: 1.3;
+    margin: 0 0 0 0.5%;
+}
+.movement_detail .intro p {
+    font-family: "Microsoft JhengHei";
+    font-size: 1em;
+    margin: 0 0 0 1.5%;
+    font-weight: lighter;
+    height: 70%;
+    overflow-y: auto;
+}
+.movement_detail .time {
+    margin-top: 0;
+}
+.movement_detail .time span {
+    font-family: "小塚 Pr6N regular";
+    font-size: 0.95em;
+    margin: 0 0 0 1%;
+}
+.movement_detail .contact {
+    font-family: "Microsoft JhengHei";
+    font-size: 1em;
+    font-weight: lighter;
+    line-height: 1.3;
+    margin: 1.5% 0;
+}
+.movement_detail .link{
+    margin: 0;
+} 
+
+.movement_discuss_wrapper {
+    background-color: #009e94;
+    height: 100%;
+    position: absolute;
+    right: -9%;
+    top: 0;
+    width: 44%;
+}
+.movement_discuss_wrapper2 {
+    padding: 6%;
+    width: 88%;
+}
+.movement_discuss {
+    position: absolute;
+    top: 0;
+    height: 336px;
+}
+
+.movement_discuss_content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.movement_reply {
+    bottom: 0;
+    height: 24px;
+    position: absolute;
+}
+.movement_reply textarea {
+    border: 0 none;
+    border-radius: 5px 5px 5px 5px;
+    height: 53%;
+    left: 5.5%;
+    position: absolute;
+    resize: none;
+    width: 356px;
+}
+.movement_reply .button {
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.95em;
+    height: 27%;
+    position: absolute;
+    top: -2%;
+    width: 18.5%;
+}
+.movement_reply img {
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+.movement_reply img.selected {
+    display: none;
+}
+.movement_reply .button:hover img.selected {
+    display: block;
+}
+
+.movement_reply .submit {
+    right: 5.5%;
+}
+.movement_reply span {
+    display: block;
+    position: absolute;
+    top: 0%;
+    right: 0;
+}
+
+.movement_discuss_block {
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+    color: black;
+    height: auto;
+    min-height: 24%;
+    margin: 1.5% 0 1.8% 0;
+    position: relative;
+    width: 99%;
+}
+
+.movement_discuss_block .reply_rate {
+    top: 11px;
+    height: 54px;
+    position: absolute;
+    width: 7.5%;
+}
+.movement_discuss_block .reply_rate.agree {
+    right: 11%;
+    color: #85b32b;
+}
+.movement_discuss_block .reply_rate.disagree {
+    right: 2.5%;
+    color: #d11576;
+}
+.movement_discuss_block span {
+    display: block;
+    font-size: 0.9em;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+.movement_discuss_block img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.movement_discuss_block .username {
+    font-size: 0.88em;
+    font-weight: bold;
+    left: 2%;
+    position: relative;
+    text-transform: uppercase;
+    top: 5px;
+}
+
+.movement_discuss_block .text {
+    padding-bottom: 2%;
+    font-size: 0.77em;
+    height: auto;
+    min-height: 60%;
+    left: 3%;
+    position: relative;
+    max-width: 75%;
+    margin-top: 2%;
+}
+
+.movement_publisher_data_wrapper {
+    background-color: #009e94;
+    height: 100%;
+    position: absolute;
+    right: -9%;
+    top: 0;
+    width: 44%;
+    display: none;
+}
+.movement_publisher_data_wrapper > div > img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.movement_publisher_data_wrapper .photo {
+    height: 14%;
+    left: 9%;
+    position: absolute;
+    top: 7%;
+    width: 16%;
+}
+.movement_publisher_data_wrapper .validate {
+    display: none;
+    position: absolute;
+}
+.movement_publisher_data_wrapper .validate.selected {
+    display: block;
+}
+.movement_publisher_data_wrapper .mail_v {
+    height: 3%;
+    right: 27%;
+    top: 17%;
+    width: 6%;
+}
+.movement_publisher_data_wrapper .phone_v {
+    height: 5%;
+    right: 22%;
+    top: 15%;
+    width: 4%;
+}
+.movement_publisher_data_wrapper .uid {
+    font-size: 0.85em;
+    font-weight: bolder;
+    left: 29%;
+    position: absolute;
+    top: 8%;
+}
+.movement_publisher_data_wrapper > .name {
+    margin: 26% 0 0 9%;
+}
+.movement_publisher_data_wrapper .birth, .movement_publisher_data_wrapper .mail, .movement_publisher_data_wrapper .phone {
+    margin-left: 9%;
+}
+.movement_publisher_data_wrapper ul {
+    list-style: none;
+    padding-left: 9%;
+}
+.movement_publisher_data_wrapper ul li {
+    white-space: nowrap;
+    margin-bottom: 2%;
+}
+.movement_publisher_data_wrapper ul div {
+    display: inline-block;
+}
+.movement_publisher_data_wrapper div.rating {
+    height: 6%;
+    left: 28%;
+    margin: 0;
+    top: 14%;
+    width: 32%;
+}
+.movement_publisher_data_wrapper .close {
+    font-weight: bolder;
+    position: absolute;
+    right: 3%;
+    top: 0.5%;
+    font-size: 1.5em;
+}
+/*movement detail*/
+
+/*rating*/
+.movement_detail_wrapper .rating {
+    bottom: 10%;
+    height: 35%;
+    left: 36%;
+    margin: 2% 0 4.5%;
+    position: absolute;
+    width: 53%;
+}
+.rating_block {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+}
+.rating_block .star {
+    height: 100%;
+    position: absolute;
+}
+.rating_wrapper {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 125px;
+}
+.rating_block .star1 {
+    left: 0;
+}
+.rating_block .star2 {
+    left: 20%;
+}
+.rating_block .star3 {
+    left: 40%;
+}
+.rating_block .star4 {
+    left: 60%;
+}
+.rating_block .star5 {
+    left: 80%;
+}
+.rating_base {
+}
+.rating_cur {
+    z-index: 1;
+}
+.rating_new {
+    z-index: 2;
+    display: none;
+}
+.rating_base .star {
+    height: 90%;
+    margin: 1% 0 0 0.75%;
+}
+/*rating*/
+
+/*display icon*/
+#movement_display_mode_wrapper {
+    position: fixed;
+    top: 0;
+    left: 192px;
+    width: 300px;
+    height: auto;
+    background-color: black;
+    z-index: 10;
+}
+#movement_display_mode {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 40px;
+    z-index: 1;
+}
+.movement_display_mode {
+    padding: 0;
+    margin: 0;
+    width: 20%;
+    height: 72%;
+    top: 10%;
+}
+.movement_display_mode > img {
+    height: 73%;
+    left: 26%;
+    position: absolute;
+    top: 15%;
+    width: 52%;
+}
+.movement_display_mode > img.hover {
+    display: none;
+    z-index: 1;
+}
+.movement_display_mode.selected > img.hover {
+    display: block;
+}
+#movement_display_mode:hover .movement_display_mode.selected > img.hover {
+    display: none;
+}
+.movement_display_mode:hover > img.hover {
+    display: block !important;
+}
+.movement_display_mode.tag {
+    position: absolute;
+    left: 0;
+}
+.movement_display_mode.nation {
+    position: absolute;
+    left: 20%;
+}
+.movement_display_mode.time {
+    position: absolute;    
+    left: 39.9%;
+}
+.movement_display_mode.list {
+    left: 59.9%;
+    position: absolute;
+}
+.movement_display_mode.gallery {
+    position: absolute;
+    left: 79.9%;
+}
+.movement_display_mode{
+    border-left: 2px solid white;
+}
+.movement_display_mode:first-child{
+    border: none;
+}
+/*display icon*/
+
+/*movement list*/
+#movement_list_wrapper {
+    background-color: #3F4861;
+    height: 78.75%;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    display: none;/**/
+    z-index: 1;
+}
+#movement_list_wrapper button {
+    background-color: transparent;
+    border: 0 none;
+    height: 6.5%;
+    padding: 0;
+    position: absolute;
+    top: 47%;
+    width: 1.9%;
+}
+#movement_list_wrapper > button.left {
+    left: 2%;
+}
+#movement_list_wrapper > button.right {
+    right: 2%;
+}
+#movement_list_wrapper button img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#movement_list_wrapper button img.disabled {
+    display: none;
+    z-index: 2;
+}
+#movement_list_wrapper button:disabled img.disabled, #movement_list_wrapper button.disabled img.disabled {
+    display: block;
+}
+#movement_list_wrapper2 {
+    height: 89.75%;
+    left: 4%;
+    position: absolute;
+    top: 5%;
+    width: 92%;
+    overflow: hidden;
+}
+.movement_list_wrapper3 {
+    display: inline-block;
+    height: 100%;
+    left: 3.5%;
+    position: relative;
+    top: 0;
+    vertical-align: top;
+    width: 270px;
+}
+#movement_list_wrapper2 button {
+    height: 3.7%;
+    top: 96.1%;
+    width: 8.4%;
+}
+#movement_list_wrapper2 button.up {
+    left: 20.2%;
+}
+#movement_list_wrapper2 button.down {
+    left: 36.2%;
+}
+.movement_list_wrapper3 .title {
+    height: 9%;
+    left: 15%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 36%;
+}
+.movement_list_wrapper3 .year {
+    font-family: "Futura Oblique";
+    font-size: 35px;
+    line-height: 1;
+}
+.movement_list_wrapper3 .text {
+    font-family: "Frutiger LT 87 Extra Black";
+    font-size: 17px;
+    line-height: 1;
+}
+.movement_list_wrapper4 {
+    height: 82%;
+    overflow: hidden;
+    position: absolute;
+    top: 14%;
+    width: 100%
+}
+.movement_list_wrapper4 ul {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.movement_list_wrapper4 li {
+    font-family: "Fruitger LT 55 Roman";
+    font-size: 14.5px;
+    line-height: 1;
+    margin: 0 0 16px 0;
+}
+.movement_list_wrapper4 div {
+    display: inline-block;
+    vertical-align: top;
+}
+.movement_list_wrapper4 .date {
+    width: 15%
+}
+.movement_list_wrapper4 .name {
+    width: 80%
+}
+/*movement list*/
+
+/*tag filter*/
+#movement_tag_wrapper, #movement_tag_wrapper_nation, #movement_tag_wrapper_time {
+    background-color: black;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    top: 100%;
+}
+#movement_tag_wrapper {
+    width: 300px;
+}
+#movement_tag_wrapper_nation {
+    width: 158px;
+}
+#movement_tag_wrapper_time {
+    width: 118px;
+}
+#movement_tag_wrapper2, #movement_tag_wrapper_nation2, #movement_tag_wrapper_time2 {
+    height: auto;
+    padding: 10% 0 6%;
+    position: relative;
+    width: 100%;
+}
+.movement_tag_list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: white;
+}
+.movement_tag_list.hide .movement_tag {
+    opacity: 0.5;
+}
+.movement_tag_list.hide .movement_tag:hover {
+    opacity: 1;
+}
+.movement_tag {
+    margin: 0 0 3% 4%;
+}
+.movement_tag_list.show .movement_tag {
+    display: none;
+}
+.movement_tag_list.show .movement_tag.selected {
+    display: block;
+}
+.movement_tag_list.hide .movement_tag {
+    display: block;
+}
+.movement_tag_list.hide .movement_tag.selected {
+    display: none;
+}
+.movement_tag .selection {
+    display: inline-block;
+    position: relative;
+    top: 13%;
+    vertical-align: top;
+    width: 5%;
+}
+.movement_tag img {
+    width: 100%;
+    position: absolute;
+}
+.movement_tag img.hover {
+    display: none;
+}
+.movement_tag:hover img {
+    display: none;
+}
+.movement_tag:hover img.hover {
+    display: block;
+    z-index: 1;
+}
+.movement_tag > span {
+    left: 2%;
+    position: relative;
+}
+/*tag filter*/

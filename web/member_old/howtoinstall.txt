@@ -1,0 +1,63 @@
+// ----------------------------------------------------------------
+// Captcha Genie PHP Script v1.0    
+// Released 24th May, 2009
+// Copyright (c) 2010 Alexandru Marias, All Rights Reserved
+// Web: http://www.captchagenie.com
+// Phone: +40722486348
+// ----------------------------------------------------------------
+
+This is a step by step tutorial on how to install the captcha script, for webmasters who do not have advanced knowleage of PHP and HTML. We will explain the process gentle without getting too technical.
+
+Basically, to add the captcha on a web form we need to do three things.
+
+This is a step by step tutorial on how to install the Captcha Genie in several easy steps.
+
+
+1. Step One.
+
+   Download CaptchaGenie.zip, unpack it, and upload the folder named "captcha" to your webhosting account. This folder contains backgrounds, fonts, and the actual script that creates the captcha code. 
+
+   Check if the upload went succesful by copy paste of this URL to your web browser:
+
+   http://www.yourwebsite.com/captcha/captchac_code.php
+
+   ( Replace yourwebsite with the domain name for your website ) . You should see the captcha image in browser.
+
+
+2. Step Two.
+
+   Copy paste the following HTML code to your webform, just before the submit button.
+
+<div>
+<div style="float:left;"><img src="/captcha/code.php" id="captcha"></div>
+<div>Are you a human?<br>
+<input type="text" name="Turing" value="" size="10">
+[ <a href="#" onclick=" document.getElementById('captcha').src = document.getElementById('captcha').src + '?' + (new Date()).getMilliseconds()">Refresh Image</a> ] [ <a href="/captcha/whatis.html" onClick="window.open('/captcha/whatis.html','_blank','width=400, height=300, left=' + (screen.width-450) + ', top=100');return false;">What's This?</a> ]
+</div>
+</div>
+
+
+   The form should now display the captcha code.
+
+
+3. Step Three.
+
+   Open the file that is processing your web form with a text editor, such as Notepad. Then copy paste the following code at the beggining of the file, then Save it.
+
+
+<?php
+	session_start();
+	$Code = $_REQUEST["Turing"]; 
+	if ( !isset( $_SESSION['turing_string'] ) ) { $ok = 1 }
+	else if ( strtoupper($_SESSION['turing_string']) == strtoupper($Code) ) { $ok = 1 }
+		else { 
+		$ok = 0;
+		echo "<b><font color=red>The Captcha Code you entered is invalid. Please press the Back button of your browser and try again</font></b><br>";
+		return 1;
+		 }
+
+?>
+
+     The Captcha Should be shown and working! If you have any problems, please contact us and we will be glad to help!
+
+    

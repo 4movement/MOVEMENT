@@ -1,0 +1,290 @@
+/*.design_template {
+ width: 2048px;
+ height: 1280px;
+ position: absolute;
+ border: none;
+ right: 0;
+ }*/
+/*body {
+ overflow: auto;
+ }*/
+
+#menu {
+    font-family: "futura oblique";
+    font-size: 1.92em;
+    height: 55px;
+    line-height: 55px;
+    list-style: none inside none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 22px;
+    width: 880px;
+    z-index: 90;
+    background-color: #211613;
+    white-space: nowrap;
+    color: white;
+}
+
+.menu {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0px 0px 0px 2%;
+    margin-right: 2.5%;
+}
+.menu:last-child {
+    margin-right: 0;
+    width: 18.5%;
+    padding-left: 5%;
+}
+
+#menu:hover .selected {
+    background-color: transparent;
+}
+.menu.selected, #menu .menu:hover {
+    background-color: #0098de;
+}
+
+.menu_l {
+    left: -27px;
+    border-width: 27.5px 0 28.5px 27.5px;
+    position: absolute;
+    top: 0;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    -webkit-transform: rotate(360deg);
+}
+.menu_l, #menu:hover .selected .menu_l {
+    border-color: #211613 transparent #211613 transparent;
+}
+.menu.selected .menu_l, #menu .menu:hover .menu_l {
+    border-color: #1f93d1 transparent #0098de transparent;
+}
+
+.menu_r {
+    right: -26px;
+    border-width: 27.5px 0 28.5px 27.5px;
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    -webkit-transform: rotate(360deg);
+}
+#menu li:last-child .menu_r {
+    display: none;
+}
+.menu_r, #menu:hover .selected .menu_r {
+    border-color: transparent transparent transparent #211613;
+}
+.menu.selected .menu_r, #menu .menu:hover .menu_r {
+    border-color: transparent transparent transparent #0098de;
+}
+
+#menu .menu_icon {
+    height: 0%;
+    left: 30px;
+    width: 72px;
+    position: absolute;
+    top: 100%;
+    overflow: hidden;
+    transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s; /* Firefox 4 */
+    -webkit-transition-duration: 0.7s; /* Safari and Chrome */
+    -o-transition-duration: 0.7s; /* Opera */
+    transition-property: height;
+    -moz-transition-property: height; /* Firefox 4 */
+    -webkit-transition-property: height; /* Safari and Chrome */
+    -o-transition-property: height; /* Opera */
+}
+#menu:hover .selected .menu_icon {
+    height: 0%;
+}
+.menu.selected .menu_icon, #menu .menu:hover .menu_icon {
+    height: 110%;
+}
+#menu .menu_icon > img {
+    height: 61px;
+    /*left: 30px;*/
+    position: absolute;
+    bottom: 0;
+}
+
+#menu_login .menu_icon {
+    left: -6%;
+    width: 112%;
+}
+#menu_login.menu:hover .menu_icon, #menu_login.selected .menu_icon {
+    height: 569%;
+}
+#menu_login .menu_icon > img {
+    bottom: 0px;
+    height: 335px;
+    left: 0;
+}
+
+#menu_login .menu_icon2 {
+    background-color: white;
+    bottom: 101%;
+    height: 0%;
+    left: 0;
+    position: absolute;
+    width: 85%;
+    transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s; /* Firefox 4 */
+    -webkit-transition-duration: 0.7s; /* Safari and Chrome */
+    -o-transition-duration: 0.7s; /* Opera */
+    transition-property: height;
+    -moz-transition-property: height; /* Firefox 4 */
+    -webkit-transition-property: height; /* Safari and Chrome */
+    -o-transition-property: height; /* Opera */
+}
+#menu_login.selected .menu_icon2 {
+    height: 40%;
+}
+#menu:hover .menu_icon2 {
+    height: 0%;
+}
+#menu_login:hover .menu_icon2 {
+    /*box-shadow: 0 -3px 4px 4px rgba(181, 178, 174, 0.9);*/
+    height: 40% !important;
+}
+
+#menu_login form {
+    bottom: 118px;
+    height: 135px;
+    left: 5.7%;
+    position: absolute;
+    width: 75%;
+    transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s; /* Firefox 4 */
+    -webkit-transition-duration: 0.7s; /* Safari and Chrome */
+    -o-transition-duration: 0.7s; /* Opera */
+    transition-property: top;
+    -moz-transition-property: top; /* Firefox 4 */
+    -webkit-transition-property: top; /* Safari and Chrome */
+    -o-transition-property: top; /* Opera */
+}
+#menu_login input {
+    box-shadow: 0 0 2px 1px rgba(161, 158, 154, 0.9);
+    display: block;
+    font-size: 0.58em;
+    height: 14%;
+    margin: 8% auto 0;
+    position: relative;
+    top: 1%;
+    width: 82%;
+}
+#menu_login button {
+    background-color: #0098DE;
+    border: 0 none;
+    color: white;
+    font-size: 0.6em;
+    height: 20.5%;
+    left: 6.9%;
+    margin: 0 -1.8% 0 0;
+    position: relative;
+    top: 4.86%;
+    width: 41.6%;
+    border-radius: 5%;
+    display: inline-block;
+}
+
+#menu_login button:hover {
+    background-color: black;
+}
+#menu_login .other_account {
+    bottom: -60.5%;
+    cursor: default;
+    height: 57.35%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+#menu_login h2 {
+    color: black;
+    font-size: 0.8em;
+    font-weight: normal;
+    left: 8%;
+    line-height: 1.2;
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    top: 4%;
+    width: 100%;
+    display: none;
+}
+#menu_login .other_account button {
+    background-color: transparent;
+    border: 0 none;
+    height: 37%;
+    margin: 3% -12% 0 5%;
+    vertical-align: top;
+    width: 25%;
+}
+#menu_login .other_account img {
+    position: relative;
+    width: 100%;
+}
+#menu_login .other_account button:hover img {
+    width: 120%;
+    top: -10%;
+    left: -10%;
+}
+
+#menu_login {
+    cursor: default;
+}
+
+#menu_login input {
+    cursor: text;
+}
+
+#menu_login button {
+    cursor: pointer;
+}
+
+#menu_login div.member_photo {
+    height: 94%;
+    left: 22%;
+    position: relative;
+    width: 56%;
+    display: none;
+}
+#menu_login p.member_photo {
+    bottom: -13%;
+    color: gray;
+    font-size: 0.75em;
+    line-height: 1.3;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.user_name{
+    bottom: -13%;
+    color: gray;
+    font-size: 0.75em;
+    line-height: 1.3;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+#menu_login img.member_photo {
+    width: 100%;
+}
+
+#menu_test {
+    height: 1308%;
+    left: -132%;
+    opacity: 0.5;
+    position: absolute;
+    top: -273%;
+    z-index: 1;
+}

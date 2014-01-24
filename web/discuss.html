@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Movement:Discuss</title>
+        <link rel="stylesheet" href = "./css/discuss.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/font.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+
+        <script src="./js/vendor/jquery-1.9.1.min.js"></script>
+        <!--	<script src="./js/main.js"></script> -->
+        <script src="./js/discuss.js"></script>
+
+    </head>
+
+    <body>
+        <!-- <img src="img/discuss/di-in01.jpg" class = "design_template"/><!---->
+        <div id="discuss_layout" class="layout">
+            <div id="discuss" class="wrapper">
+                <div id = "discuss_l_wrapper">
+                    <div id="discuss_topic_wrapper">
+                        <div class="dummy_bk"></div>
+                        <div class="dummy_bk2"></div>
+                        <div class="discuss_topic">
+                            <p>
+                                Anti-nuclear energy
+                            </p>
+                        </div>
+                        <div class="discuss_subtitle">
+                            <p>
+                                There are 2,000 people are talking about this issue.
+                            </p>
+                            <img class="conver-icon" src="./img/discuss/conver-icon.png">
+                        </div>
+                        <div class="back_to_issue">
+                            <img class="icon_btn ba-icon" src="./img/discuss/ba-icon01.png">
+                            <img class="icon_btn ba-icon selected" src="./img/discuss/ba-icon02.png">
+                            <p>
+                                back to issue page
+                            </p>
+                        </div>
+                        <div id = "newtopic" class = "write_new_topic">
+                            <img src="img/discuss/newtopic01.png" class="icon_btn" >
+                            <img src="img/discuss/newtopic02.png" class="icon_btn selected"  >
+                            <div>
+                                new topic
+                            </div>
+                        </div>
+                    </div>
+                    <div id="discuss_list_wrapper">
+                        <ul class="discuss_list_wrapper">
+                            <li class="dummy_bk"></li>
+                        </ul>
+                    </div>
+                </div><!--L-->
+                <div id = "discuss_r_wrapper">
+                    <div id="discuss_reply_wrapper">
+                        <div class="reply_topic">
+                            <p>
+                                Topic 低碳vs.非核家園議題攻防
+                            </p>
+                        </div>
+                        <div class="reply_content">
+                            <!-- <div reply_id="" class="reply_content">
+                            <div class = "title">
+                            <div class="reply_username">
+                            <p>
+                            demo
+                            </p>
+                            </div>
+                            <div class="agree_number rate_number">
+                            <p class="rate_number">
+                            0
+                            </p>
+                            <img src="./img/discuss/agree-icon.png" class="agree_icon rate_icon">
+                            </div>
+                            <div class="disagree_number rate_number">
+                            <p class="rate_number ">
+                            0
+                            </p>
+                            <img src="./img/discuss/disagree-icon.png" class="disgree_icon rate_icon">
+                            </div>
+                            </div>
+
+                            <div class="reply_user_content">
+                            <p>
+                            hi! everyone
+                            </p>
+                            </div>
+                            </div><!---->
+                        </div>
+                        <div class="reply_icon_area">
+                            <div class="reply_page">
+                                <div class="page_top">
+                                    <img src="./img/discuss/to-icon01.png" class="icon_btn">
+                                    <img src="./img/discuss/to-icon02.png" class="icon_btn selected">
+                                    <p>
+                                        top
+                                    </p>
+                                </div>
+                                <div class="page_bottom">
+                                    <img src="./img/discuss/bo-icon01.png" class="icon_btn">
+                                    <img src="./img/discuss/bo-icon02.png" class="icon_btn selected">
+                                    <p>
+                                        bottom
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="reply_title">
+                            Reply
+                        </p>
+                        <div class="reply_type">
+                            <div class="reply_submit">
+                                <input class="reply_submit_button" name="submit" type="button" value="submit">
+                                <img src="./img/discuss/sumi-icon01.png" class="icon_btn">
+                                <img src="./img/discuss/sumi-icon02.png" class="icon_btn selected">
+                            </div>
+                            <form>
+                                <textarea class="reply_textarea"></textarea>
+                            </form>
+                        </div>
+                        <div id="reply_bar_top"></div>
+                        <div id="reply_bar_down"></div>
+                    </div>
+                    <div id="new_article_wrapper">
+                        <div id = "discuss_new_button" >
+                            <div id = "discuss_new_submit" class="button" >
+                                <span> submit </span>
+                                <img src="./img/discuss/sumi-icon01.png" class="icon_btn">
+                                <img src="./img/discuss/sumi-icon02.png" class="icon_btn selected">
+                            </div>
+                        </div>
+                        <div id="discuss_cancel_button">
+                            <div id="discuss_new_cancel" class="button ">
+                                <span> cancel </span>
+                                <img src="./img/discuss/canc-icon01.png"  class="icon_btn">
+                                <img src="./img/discuss/canc-icon02.png"  class="icon_btn selected">
+                            </div>
+                        </div>
+                        <div id="discuss_new_tilte">
+                            Create a new topic
+                        </div>
+                        <div class="new_article_wrapper">
+                            <form>
+                                <div class="article_topic">
+                                    <p>
+                                        Topic
+                                    </p>
+                                    <input type="text" name="article_topic" id="article_topic_type">
+                                </div>
+                                <div class="article_edit">
+                                    <p>
+                                        Your point of view
+                                    </p>
+                                    <textarea class="article_edit_type"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div><!--R-->
+            </div><!--discuss-->
+        </div>
+    </body>
+</html>
+

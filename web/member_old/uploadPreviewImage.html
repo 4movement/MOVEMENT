@@ -1,0 +1,51 @@
+
+
+
+
+public ModelAndView uploadPreviewImage(HttpServletRequest request, HttpServletResponse response) throws IOException{
+        User user = (User)request.getSession().getAttribute("user" );
+        MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest)request;
+        MultipartFile image = multipartRequest.getFile("advImage" );
+        
+        response.setCharacterEncoding(BusinessConstants.ENCOD_UTF);
+        response.setHeader( "ContentType", "json" );
+        
+        PrintWriter out = response.getWriter();
+        
+        // 組合零時圖片名 
+        String imageName = image.getOriginalFilename();
+        String file_ext = imageName.substring(imageName.lastIndexOf(BusinessConstants.DOT) + 1 );
+        SimpleDateFormat df = new SimpleDateFormat(BusinessConstants.DATE_FORMAT);
+        String tempImageName = user.getId() +BusinessConstants.UNDERLINE + df.format( new Date()) + BusinessConstants.DOT + file_ext;        
+        
+        // 存放瀏覽圖片的零時文件路徑 
+        File file = new File(request.getSession().getServletContext().getRealPath(BusinessConstants.TEMP_PICTURE_PATH + 
+                tempImageName));
+        
+        byte [] advImageBytes = null ;
+        InputStream advImageStream = null ;
+        
+        try {
+            file.createNewFile();
+            advImageStream = image.getInputStream();
+            advImageBytes = FileCopyUtils.copyToByteArray(advImageStream);
+            FileCopyUtils.copy(advImageBytes, file);
+            advImageStream.close();
+        } catch (IOException e) {
+
+            e.printStackTrace();
+        }
+        
+        String tempPath = BusinessConstants.TEMP_RELATIVE_PICTURE_PATH + 
+         tempImageName;
+        
+        // 傳給頁面相對路徑 
+        out.print("{" );  
+        out.print( "tempPath:'"+tempPath+"'," );
+        out.print( "msg:''" );
+        out.print( "}" );
+        out.flush();
+        out.close(); 
+        // ajax 
+        return  null ;
+    }
