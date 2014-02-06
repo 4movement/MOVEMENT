@@ -8,7 +8,7 @@ http://4movement.github.io/MOVEMENT-Web/index.html
 
 # Demo Website
 
-http://www.movement-itw.com
+http://merry.ee.ncku.edu.tw/~smart0eddie/cur/
 
 # Contact
 
