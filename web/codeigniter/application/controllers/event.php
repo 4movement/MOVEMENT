@@ -21,10 +21,10 @@ class Event extends CI_Controller{
   }
 
   public function photo_upload(){
-	$photo_config['upload_path'] = '/home/wp/smart0eddie/public_html/movement_photo/';
+	$photo_config['upload_path'] = '/home/smart0eddie/public_html/movement_photo/';
 	$photo_config['allowed_types'] = 'jpg';
-
 	$this->load->library('upload',$photo_config);
+    $this->upload->initialize($photo_config);
 
 	if(!$this->upload->do_upload())
 	{
@@ -46,10 +46,10 @@ class Event extends CI_Controller{
     $last_entry = $this->Movements->new_event($_POST);
 	$fresh_id = $last_entry[0]->id;
     if($fresh_id > 0){
-	$photo_config['upload_path'] = '/home/wp/smart0eddie/public_html/movement_photo/';
+	$photo_config['upload_path'] = '/home/smart0eddie/public_html/movement_photo/';
 	$photo_config['allowed_types'] = 'jpg';
-
 	$this->load->library('upload',$photo_config);
+    $this->upload->initialize($photo_config);
 
 	if(!$this->upload->do_upload())
 	{
@@ -67,10 +67,10 @@ class Event extends CI_Controller{
     $last_entry = $this->Movements->new_event($_POST);
 	$fresh_id = $last_entry[0]->id;
     if($fresh_id > 0){
-	/*$photo_config['upload_path'] = '/home/wp/smart0eddie/public_html/movement_photo/';
+	/*$photo_config['upload_path'] = '/home/smart0eddie/public_html/movement_photo/';
 	$photo_config['allowed_types'] = 'jpg';
-
 	$this->load->library('upload',$photo_config);
+    $this->upload->initialize($photo_config);
 
 	if(!$this->upload->do_upload())
 	{
@@ -82,7 +82,7 @@ class Event extends CI_Controller{
 		echo "success";
 	}*/
 	
-	   $imgfile = "/home/wp/smart0eddie/public_html/cur/".$_POST['userfile'];
+	   $imgfile = "/home/smart0eddie/public_html/cur/".$_POST['userfile'];
        list($width, $height) = getimagesize($imgfile);
        $file_info = array(
             'full_path' =>  $imgfile,

@@ -73,7 +73,7 @@ foreach($moves_query as $row){?>
 	<input type = "submit" value= "delete">
 </form>
 
-<?php if (file_exists("/home/wp/smart0eddie/public_html/movement_photo/".$row->id."_s.jpg"))
+<?php if (file_exists("/home/smart0eddie/public_html/movement_photo/".$row->id."_s.jpg"))
 	echo "<img src=\"http://merry.ee.ncku.edu.tw/~smart0eddie/movement_photo/".$row->id."_s.jpg\" ></img>";
 ?>
 

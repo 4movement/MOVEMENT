@@ -87,7 +87,7 @@
 	  
 	  function find_photo_url(& $mvmt_arr){
 	
-	    $base_path = '/home/wp/smart0eddie/public_html/movement_photo/';
+	    $base_path = '/home/smart0eddie/public_html/movement_photo/';
 	    $base_url = 'merry.ee.ncku.edu.tw/~smart0eddie/movement_photo/';
 	    foreach($mvmt_arr as &$mvmt){ 
 	      $photo_path = $base_path.$mvmt['id'].'_b.jpg';

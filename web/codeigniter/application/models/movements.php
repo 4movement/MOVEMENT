@@ -24,7 +24,7 @@
    function photo_rename($f,$event_id){
      //print_r($f);
      //header('Content-Type:image/jpeg');
-     $path_to_photo = '/home/wp/smart0eddie/public_html/movement_photo/';
+     $path_to_photo = '/home/smart0eddie/public_html/movement_photo/';
      $ratio = $f['image_width']/$f['image_height'];
 	if(file_exists($f['full_path'])){
 	  //echo $ratio;
