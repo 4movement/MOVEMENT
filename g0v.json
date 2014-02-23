@@ -1,7 +1,7 @@
 {
   "author": "4movement",
   "contributors": [
-    "4movement"
+    "skylovely2005" , "a55660988" ,"RedBeanPieLarry", "smart0eddie", "fongwh1"
   ],
   "status": "alpha",
   "homepage": "https://www.movement-itw.com/",
@@ -12,7 +12,7 @@
   "document": "http://hack.g0v.tw/movement.hackpad.com/1sHfx1slybZ",
   "repository": {
     "type": "git",
-    "url": "https://github.com/4movement/movement"
+    "url": "https://github.com/4movement/movement1"
   },
   "licenses": [
     {
