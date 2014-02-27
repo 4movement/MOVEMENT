@@ -10,10 +10,14 @@ http://4movement.github.io/MOVEMENT-Web/index.html
 
 http://merry.ee.ncku.edu.tw/~smart0eddie/cur/
 
+$ Hackpad
+
+https://movement.hackpad.com/
+
 # Contact
 
 skylovely2005@gmail.com
 
 ## License
 
-© 2013, Movement@NCKU. Released under the [MIT License](http://opensource.org/licenses/mit-license.php).
+© 2014, Movement@NCKU. Released under the [MIT License](http://opensource.org/licenses/mit-license.php).
