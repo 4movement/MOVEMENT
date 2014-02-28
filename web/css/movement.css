@@ -533,7 +533,9 @@
     margin: 0;
     position: absolute;
     top: 13%;
-    width: 25%;
+    width: 60%;
+    overflow: hidden;
+    height: 30%;
 }
 .movement_detail_wrapper img.member_photo {
     bottom: 18%;
