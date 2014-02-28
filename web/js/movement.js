@@ -226,8 +226,21 @@ function movement_detail_data($obj) {
     $(".movement_detail .photo").attr({
         src : pathToPhoto
     })
+    //get publisher info
     $(".movement_detail_wrapper .rate_button p.member_photo, .movement_publisher_data_wrapper .uid, .movement_publisher_data_wrapper .name").text(publisher).attr("uid",publisher_id);
-
+    $.ajax({
+        url: 'member/get_publisher_info.php',
+        type: 'POST',
+        dataType: 'json',
+        data: {No: publisher_id},
+        success: function(data){
+            $(".movement_publisher_data_wrapper .mail").text(data.email);
+            $(".movement_publisher_data_wrapper .birth").text(data.birth);
+            $(".movement_publisher_data_wrapper .photo img").attr('src',data.photo);
+            $(".member_photo img").attr('src',data.photo);
+       }
+  });
+    
     $(".movement_detail_wrapper .rating_cur").css({
         "width" : Math.round(Math.random() * 100) + '%'
     });

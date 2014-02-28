@@ -72,7 +72,11 @@ if ($error) {
         mysql_query($time_query);
         $ip_query = "update mem_db set ip='$ip' where FB_id= '$row[FB_id]'";
         mysql_query($ip_query);
-		$photo=$row["photo"];
+		/**/
+        $photo = "update mem_db set photo='$FB_photo' where FB_id= '$row[FB_id]'";
+        mysql_query($photo);
+        /**/
+        $photo=$row["photo"];
 		$No=$row["No"];
 		$FB_result["username"]=$row["username"];//資料庫裡的username
 		$FB_result["email"]=$row["email"];//資料庫裡的email
@@ -85,7 +89,7 @@ if ($error) {
     } else {
         $TW_times = date("Y-m-d H:i:s", mktime(date('H'), date('i'), date('s'), date('m'), date('d'), date('Y')));
 
-        $sql = "INSERT INTO mem_db (username,email,FB_id,verify,ip,register_time) VALUES ('$FB_name','$FB_email','$FB_id','1','$ip','$TW_times')";
+        $sql = "INSERT INTO mem_db (username,email,FB_id,verify,ip,register_time,'photo') VALUES ('$FB_name','$FB_email','$FB_id','1','$ip','$TW_times','$FB_photo')";
         $result = mysql_query($sql);
         $FB_result["msg"] = $FB_name . " ,您好~ 謝謝您的註冊!!";
 		$No=mysql_insert_id();
