@@ -31,6 +31,12 @@ function initial_member() {
         var gender = $("#member input[name = 'gender']:checked").val();
         var address = $("#member textarea[name = 'address']").val();
         var phone = $("#member input[name = 'phone']").val();
+        var name_public = $("ul[id='member_list_form'] li:nth-child(1) img").attr('public');
+        var email_public = $("ul[id='member_list_form'] li:nth-child(4) img").attr('public');
+        var birth_public = $("ul[id='member_list_form'] li:nth-child(5) img").attr('public');
+        var gender_public = $("ul[id='member_list_form'] li:nth-child(6) img").attr('public');
+        var address_public = $("ul[id='member_list_form'] li:nth-child(7) img").attr('public');
+    
 
         var check = check_modify_data(pw, email, birth);
 		console.log("modify submit");
@@ -43,13 +49,19 @@ function initial_member() {
                 'birth' : birth,
                 'gender' : gender,
                 'address' : address,
-                'phone' : phone
+                'phone' : phone,
+                'username_public' : username_public,
+                'email_public' : email_public,
+                'birth_public' : birth_public,
+                'gender_public' : gender_public,
+                'address_public' : address_public,
             }, function(result) {
             	/*
             	if(result.username){
             		
             	}
             	*/
+            console.log(result);
     			alert("資料修改成功");
             })
             .fail(function(){
@@ -134,6 +146,16 @@ function initial_member() {
             }
         });
 
+    });
+    $('#member .setting_public_icon').click(function() {
+        if($(this).attr('public')=="1"||$(this).attr('public')==""){
+            $(this).attr('src', './img/member/unpublic-icon.png');
+            $(this).attr('public', "0");
+        }
+        else if($(this).attr('public')=="0"){
+            $(this).attr('src', './img/member/public-icon.png');
+            $(this).attr('public', "1");
+        }
     });
 
 }

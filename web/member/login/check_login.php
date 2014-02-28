@@ -42,6 +42,12 @@ else{
 			$member_data["birth"]=$row["birth"];
 		}
 		$member_data["address"]=$row["address"];
+		$member_data["username_public"] = $row["username_public"];
+		$member_data["email_public"] = $row["email_public"];
+		$member_data["birth_public"] = $row["birth_public"];
+		$member_data["gender_public"] = $row["gender_public"];
+		$member_data["address_public"] = $row["address_public"];
+
 		
 		
 	}

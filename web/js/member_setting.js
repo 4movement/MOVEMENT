@@ -1,4 +1,3 @@
-
 $("#member_file").click(function() {
 	$("#member_setting_mask").fadeIn();
 	$("#member_setting_mask1").fadeIn();
@@ -16,89 +15,87 @@ $("#member_user_photo").click(function() {
 	$("#member_setting_mask").fadeIn();
 	$("#member_setting_mask1").fadeIn();
 });
+uploader = {
+	carry: function(){
+		// set form
+		YAHOO.util.Connect.setForm('uploadForm', true);
+		// upload image
+		YAHOO.util.Connect.asyncRequest('POST', 'upload.php', {
+			upload: function(o){
+				// parse our json data
+				var jsonData = YAHOO.lang.JSON.parse(o.responseText);
+				
+				// put image in our image container
+				YAHOO.util.Dom.get('imageContainer').innerHTML = '<img id="yuiImg" src="' + jsonData.image + '" width="' + jsonData.width + '" height="' + jsonData.height + '" alt="" />';
+				console.log(jsonData.image);
+				// init our photoshop
+				photoshop.init(jsonData.image); 
+							
+				// get first cropped image
+				photoshop.getCroppedImage(jsonData.image);
+				
+			}
+		});
+	}
+};
 
-			
-			uploader = {
-				carry: function(){
-					// set form
-					YAHOO.util.Connect.setForm('uploadForm', true);
-					// upload image
-					YAHOO.util.Connect.asyncRequest('POST', 'upload.php', {
-						upload: function(o){
-							// parse our json data
-							var jsonData = YAHOO.lang.JSON.parse(o.responseText);
-							
-							// put image in our image container
-							YAHOO.util.Dom.get('imageContainer').innerHTML = '<img id="yuiImg" src="' + jsonData.image + '" width="' + jsonData.width + '" height="' + jsonData.height + '" alt="" />';
-							console.log(jsonData.image);
-							// init our photoshop
-							photoshop.init(jsonData.image); 
-										
-							// get first cropped image
-							photoshop.getCroppedImage(jsonData.image);
-							
-						}
-					});
-				}
-			};
-			
-			// add listeners
-			YAHOO.util.Event.on('uploadButton', 'click', uploader.carry);
-			photoshop = {
-				image: null,
-				crop: null,
+// add listeners
+YAHOO.util.Event.on('uploadButton', 'click', uploader.carry);
+photoshop = {
+	image: null,
+	crop: null,
+	
+	init: function(image){
+		// set our image
+		photoshop.image = image;
+					
+		// our image cropper from the uploaded image					
+		photoshop.crop = new YAHOO.widget.ImageCropper('yuiImg');
+		photoshop.crop.on('moveEvent', function() {
+			// get updated coordinates
+			photoshop.getCroppedImage(image);
+		});
+	},
+	
+	getCroppedImage: function(imgname){
+		var coordinates = photoshop.getCoordinates();
+		console.log("Ha NAME");
+		console.log(imgname);
+		
+		//var url = 'crop.php?image=' + photoshop.image + '&cropStartX=' + coordinates.left +'&cropStartY=' + coordinates.top +'&cropWidth=' + coordinates.width +'&cropHeight=' + coordinates.height + '&crop=' + imgname;
+		YAHOO.util.Dom.get('ac').innerHTML = "<div id='check'>Check</div>";	
+		
+		$("#check").click(
+			function go(){
 				
-				init: function(image){
-					// set our image
-					photoshop.image = image;
-								
-					// our image cropper from the uploaded image					
-					photoshop.crop = new YAHOO.widget.ImageCropper('yuiImg');
-					photoshop.crop.on('moveEvent', function() {
-						// get updated coordinates
-						photoshop.getCroppedImage(image);
-					});
-				},
-				
-				getCroppedImage: function(imgname){
-					var coordinates = photoshop.getCoordinates();
-					console.log("Ha NAME");
-					console.log(imgname);
-					
-					//var url = 'crop.php?image=' + photoshop.image + '&cropStartX=' + coordinates.left +'&cropStartY=' + coordinates.top +'&cropWidth=' + coordinates.width +'&cropHeight=' + coordinates.height + '&crop=' + imgname;
-					YAHOO.util.Dom.get('ac').innerHTML = "<div id='check'>Check</div>";	
-					
-					$("#check").click(
-						function go(){
-							
-							var base_url = "";
-							var url = base_url + "crop.php";
-							$.get(url,{
-								image:photoshop.image,
-								cropStartX:coordinates.left,
-								cropStartY:coordinates.top,
-								cropWidth:coordinates.width,
-								cropHeight:coordinates.height,
-								crop:imgname,
-								},function(data){
-									console.log("AJAX OK");
-									console.log(data);
-								}
-							);
-						}
-						
-					)
-						
-						
-					
-					
+				var base_url = "";
+				var url = base_url + "crop.php";
+				$.get(url,{
+					image:photoshop.image,
+					cropStartX:coordinates.left,
+					cropStartY:coordinates.top,
+					cropWidth:coordinates.width,
+					cropHeight:coordinates.height,
+					crop:imgname,
+					},function(data){
+						console.log("AJAX OK");
+						console.log(data);
+					}
+				);
+			}
 			
-				},
+		)
 			
-				getCoordinates: function(){
-					return photoshop.crop.getCropCoords();
-				}
-			};
+			
+		
+		
+
+	},
+
+	getCoordinates: function(){
+		return photoshop.crop.getCropCoords();
+	}
+};
 /*
 function uploadImage(){
  // 檢查圖片格式

@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <?php
-include("../mysql_connect.php");
+include("mysql_connect.php");
 
 $No = $_SESSION['No'];
 $username = $_POST["username"];
@@ -9,6 +9,11 @@ $email = $_POST["email"];
 $birth = $_POST["birth"];
 $gender = $_POST["gender"];
 $address = $_POST["address"];
+$username_public = $_POST["username_public"];
+$email_public = $_POST["email_public"];
+$birth_public = $_POST["birth_public"];
+$gender_public = $_POST["gender_public"];
+$address_public = $_POST["address_public"];
 
 
 $sql = "select * from mem_db where No = '$No'";
@@ -20,18 +25,12 @@ $modify = array();
 
 if($No == $row[No]){
 		
-		$m_username = "update mem_db set username='$username' where No='$No'";
-		mysql_query($m_username);
-		$m_pw = "update mem_db set pw='$pw' where No='$No'";
-		mysql_query($m_pw);
-		$m_email = "update mem_db set email='$email' where No='$No'";
-		mysql_query($m_email);
-		$m_birth = "update mem_db set birth='$birth' where No='$No'";
-		mysql_query($m_birth);
-		$m_gender = "update mem_db set gender='$gender' where No='$No'";
-		mysql_query($m_gender);
-		$m_address = "update mem_db set address='$address' where No='$No'";
-		mysql_query($m_address);
+		$update_member_db = "UPDATE mem_db SET username='$username',
+		pw='$pw',email='$email',birth='$birth',gender='$gender',
+		address='$address',username_public='$username_public',
+		email_public='$email_public',birth_public='$birth_public',
+		gender_public='$gender_public',address_public='$address_public' WHERE No='$No'";
+		mysql_query($update_member_db);
 		
 		$modify['username']=$username;
 		$modify['pw']=$pw;
@@ -39,6 +38,11 @@ if($No == $row[No]){
 		$modify['birth']=$birth;
 		$modify['gender']=$gender;
 		$modify['address']=$address;
+		$modify['username_public']=$username_public;
+		$modify['email_public']=$email_public;
+		$modify['birth_public']=$birth_public;
+		$modify['gender_public']=$gender_public;
+		$modify['address_public']=$address_public;
 		
 		echo json_encode($modify);
 		return;

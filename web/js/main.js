@@ -306,6 +306,37 @@ function login_mod(member_data) {
         } else {
             $("#member textarea[name='address']").val("");
         }
+        
+        $("ul[id='member_list_form'] li:nth-child(1) img").attr('public',data.username_public);
+        if(data.username_public=='0'){
+            $("ul[id='member_list_form'] li:nth-child(1) img").attr('src','./img/member/unpublic-icon.png');
+        }else if(data.username_public=='1'){
+            $("ul[id='member_list_form'] li:nth-child(1) img").attr('src','./img/member/public-icon.png');
+        }
+        $("ul[id='member_list_form'] li:nth-child(4) img").attr('public',data.email_public);
+        if(data.email_public=='0'){
+            $("ul[id='member_list_form'] li:nth-child(4) img").attr('src','./img/member/unpublic-icon.png');
+        }else if(data.email_public=='1'){
+            $("ul[id='member_list_form'] li:nth-child(4) img").attr('src','./img/member/public-icon.png');
+        }
+        $("ul[id='member_list_form'] li:nth-child(5) img").attr('public',data.birth_public);
+        if(data.birth_public=='0'){
+            $("ul[id='member_list_form'] li:nth-child(5) img").attr('src','./img/member/unpublic-icon.png');
+        }else if(data.birth_public=='1'){
+            $("ul[id='member_list_form'] li:nth-child(5) img").attr('src','./img/member/public-icon.png');
+        }
+        $("ul[id='member_list_form'] li:nth-child(6) img").attr('public',data.gender_public);
+        if(data.gender_public=='0'){
+            $("ul[id='member_list_form'] li:nth-child(6) img").attr('src','./img/member/unpublic-icon.png');
+        }else if(data.gender_public=='1'){
+            $("ul[id='member_list_form'] li:nth-child(6) img").attr('src','./img/member/public-icon.png');
+        }
+        $("ul[id='member_list_form'] li:nth-child(7) img").attr('public',data.address_public);
+        if(data.address_public=='0'){
+            $("ul[id='member_list_form'] li:nth-child(7) img").attr('src','./img/member/unpublic-icon.png');
+        }else if(data.address_public=='1'){
+            $("ul[id='member_list_form'] li:nth-child(7) img").attr('src','./img/member/public-icon.png');
+        }
         //modify the information
     }//set member information
 
