@@ -195,7 +195,7 @@
     padding: 0;
     position: absolute;
     top: 1%;
-    width: 50%;
+    width: 60%;
 }
 #member_list_form li {
     font-family: "future book bt";
@@ -211,12 +211,15 @@ li#member_certificate {
 }
 
 #member_list_form .inputs2 {
-    width: 100%;
+    width: 88%;
     height: 24px;
+}
+#member_list_form .setting_public_icon {
+    width: 7%;
 }
 #member_address {
     vertical-align: top;
-    width: 100%;
+    width: 88%;
     height: 72px;
     resize: none;
 }
