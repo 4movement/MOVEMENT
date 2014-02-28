@@ -31,7 +31,7 @@ function initial_member() {
         var gender = $("#member input[name = 'gender']:checked").val();
         var address = $("#member textarea[name = 'address']").val();
         var phone = $("#member input[name = 'phone']").val();
-        var name_public = $("ul[id='member_list_form'] li:nth-child(1) img").attr('public');
+        var username_public = $("ul[id='member_list_form'] li:nth-child(1) img").attr('public');
         var email_public = $("ul[id='member_list_form'] li:nth-child(4) img").attr('public');
         var birth_public = $("ul[id='member_list_form'] li:nth-child(5) img").attr('public');
         var gender_public = $("ul[id='member_list_form'] li:nth-child(6) img").attr('public');
