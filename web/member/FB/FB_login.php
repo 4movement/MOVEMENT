@@ -83,7 +83,12 @@ if ($error) {
 		$FB_result["gender"]=$row["gender"];
 		$FB_result["birth"]=$row["birth"];
 		$FB_result["address"]=$row["address"];
-		
+        $FB_result["username_public"]=$row["username_public"];
+        $FB_result["email_public"]=$row["email_public"];
+        $FB_result["birth_public"]=$row["birth_public"];
+        $FB_result["gender_public"]=$row["gender_public"];
+        $FB_result["address_public"]=$row["address_public"];
+        
 		$FB_result["msg"] = $FB_name . " ,您好~ 歡迎回來!!";
 
     } else {
