@@ -50,7 +50,7 @@ function initial_member() {
                 'gender' : gender,
                 'address' : address,
                 'phone' : phone,
-                'username_public' : username_public,
+                'username_public' : name_public,
                 'email_public' : email_public,
                 'birth_public' : birth_public,
                 'gender_public' : gender_public,
