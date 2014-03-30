@@ -4,304 +4,373 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
-    <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>Movement</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Movement</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-        <link rel="shortcut icon" href="img/favicon.jpg">
+    <link rel="shortcut icon" href="img/favicon.jpg">
 
-        <link rel = "stylesheet" href = "css/normalize.css">
-        <link rel = "stylesheet" href = "css/main.css">
-        <link rel = "stylesheet" href = "css/font.css">
-        <link rel = "stylesheet" href = "css/animate.css">
-        <link rel = "stylesheet" href = "css/movement.css">
-        <link rel = "stylesheet" href = "css/about.css">
-        <link rel = "stylesheet" href = "css/adipoli.css">
-        <link rel = "stylesheet" href = "css/discuss.css">
-        <link rel = "stylesheet" href = "css/issue.css">
-        <link rel = "stylesheet" href = "css/guestboard.css">
-        <link rel = "stylesheet" href = "css/menu.css">
-        <link rel = "stylesheet" href = "css/logo.css">
-        <link rel = "stylesheet" href = "css/register.css">
-        <link rel = "stylesheet" href = "css/member_setting.css">
-        <link rel = "stylesheet" href = "css/help.css">
-        <link rel = "stylesheet" href = "css/yui_imgcrop.css">
-        <link rel = "stylesheet" href = "css/member_record.css">
-    </head>
-    <body >
-        <!--[if lt IE 7]>
-        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-        <div id = "dummy_info" style = "display: none;">
-            <img src="img/menu/logo-128.png" class = "logo"/>
-            <h1 class = "title"> MOVEMENT </h1>
-            <p class = "intro">
-                目前群眾運動參與者僅限於少數有關注的族群，為了能讓更多人從一個共通的管道得知群眾運動的訊息進而參與，MOVEMENT匯集了世界各地群眾運動的資訊，使用者可以看到各種即將發起、正在行動以及過去的群眾運動，加入參與、聲援以及金援群眾運動。還能了解世界各地正在發起的同類型群眾運動，國籍不同，但理念相同的人，利用這個管道互相支援！
-            </p>
+    <link rel = "stylesheet" href = "css/normalize.css">
+    <link rel = "stylesheet" href = "css/main.css">
+    <link rel = "stylesheet" href = "css/font.css">
+    <link rel = "stylesheet" href = "css/animate.css">
+    <link rel = "stylesheet" href = "css/movement.css">
+    <link rel = "stylesheet" href = "css/about.css">
+    <link rel = "stylesheet" href = "css/adipoli.css">
+    <link rel = "stylesheet" href = "css/discuss.css">
+    <link rel = "stylesheet" href = "css/issue.css">
+    <link rel = "stylesheet" href = "css/guestboard.css">
+    <link rel = "stylesheet" href = "css/menu.css">
+    <link rel = "stylesheet" href = "css/logo.css">
+    <link rel = "stylesheet" href = "css/register.css">
+    <link rel = "stylesheet" href = "css/member_setting.css">
+    <link rel = "stylesheet" href = "css/help.css">
+    <link rel = "stylesheet" href = "css/yui_imgcrop.css">
+    <link rel = "stylesheet" href = "css/member_record.css">
+</head>
+<body >
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div id = "dummy_info" style = "display: none;">
+    <img src="img/menu/logo-128.png" class = "logo"/>
+    <h1 class = "title"> MOVEMENT </h1>
+    <p class = "intro">
+    目前群眾運動參與者僅限於少數有關注的族群，為了能讓更多人從一個共通的管道得知群眾運動的訊息進而參與，MOVEMENT匯集了世界各地群眾運動的資訊，使用者可以看到各種即將發起、正在行動以及過去的群眾運動，加入參與、聲援以及金援群眾運動。還能了解世界各地正在發起的同類型群眾運動，國籍不同，但理念相同的人，利用這個管道互相支援！
+    </p>
+    </div>
+
+    <div id="mask" class="mask">            
+    </div>
+        
+    <div id = "loading_mask" class="mask">
+        <div id = "walker">
+            <img src="img/animate/walking.gif"/>
+            <div class = "text">
+            Loading...
+            </div>
         </div>
-        <div id="mask" class="mask">
+    </div>
+
+    <div id="op_wrapper">
+        <div id="op_wrapper2">
+            <div id = "hand_wrapper">
+                <img src="img/animate/hand-01.png" />
+            </div>
+            <div id = "op_logo_wrapper">
+                <div id="op_logo" class = "logo">
+                    <div class = "logo_tl">
+                    M
+                    </div>
+                    <div class = "logo_tc">
+                    O
+                    </div>
+                    <div class = "logo_tr">
+                    V
+                    </div>
+                    <div class = "logo_cl">
+                    E
+                    </div>
+                    <div class = "logo_cc">
+                    M
+                    </div>
+                    <div class = "logo_cr">
+                    E
+                    </div>
+                    <div class = "logo_bl">
+                    N
+                    </div>
+                    <div class = "logo_bc">
+                        <div>
+                        movement
+                        </div>
+                        <div>
+                        in the world
+                        </div>
+                    </div>
+                    <div class = "logo_br">
+                    T
+                    </div>
+                </div>  <!--div id="op_logo" class = "logo"-->
+            </div> <!--div id = "op_logo_wrapper"-->
+        </div>   <!--div id="op_wrapper2"-->
+    </div> <!--div id="op_wrapper"-->
+
+    <div id = "layout_wrapper">
+        <div id = "v_layout">
+            <div id = "about_layout" class = "layout">
+                
+            </div>
+            <div id = "movement_layout" class = "layout">
+                
+            </div>
+            <div id = "h_layout" class="layout">
+                <div id="issue_layout" class="layout">
+                    
+                </div>
+                <div id = "photoWall_layout" class="layout">
+                    
+                </div>
+            </div>
+            <div id="discuss_layout" class="layout">
+                
+            </div>
+            <div id="help_layout" class="layout">
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="image_cropper" class = "yui-skin-sam">
+        <form action="upload.php" enctype="multipart/form-data" method="post" name="uploadForm" id="uploadForm">
+            Image :
+            <input type="file" name="uploadImage" id="uploadImage" />
+            <input type="button" id="uploadButton" value="Upload"/>
+            <input type="button" id="image_confirm" value="Done">
+            <input type="button" id="image_cancel" value="Cancel">
+        </form>
+        <div id="imageContainer">
             
         </div>
-        
-        <div id = "loading_mask" class="mask">
-            <div id = "walker">
-                <img src="img/animate/walking.gif"/>
-                <div class = "text">
-                    Loading...
+    </div>
+
+    <div id = "logo_wrapper">
+        <div id="logo" class = "logo">
+            <div class = "logo_tl">
+            M
+            </div>
+            
+            <div class = "logo_tc">
+            O
+            </div>
+                
+            <div class = "logo_tr">
+            V
+            </div>
+                
+            <div class = "logo_cl">
+            E
+            </div>
+                
+            <div class = "logo_cc">
+            M
+            </div>
+                
+            <div class = "logo_cr">
+            E
+            </div>
+                
+            <div class = "logo_bl">
+            N
+            </div>
+                
+            <div class = "logo_bc">
+                <div>
+                movement
+                </div>
+                    
+                <div>
+                in the world
                 </div>
             </div>
-        </div>
-
-        <div id="op_wrapper">
-            <div id="op_wrapper2">
-                <div id = "hand_wrapper">
-                    <img src="img/animate/hand-01.png" />
-                </div>
-                <div id = "op_logo_wrapper">
-                    <div id="op_logo" class = "logo">
-                        <div class = "logo_tl">
-                            M
-                        </div>
-                        <div class = "logo_tc">
-                            O
-                        </div>
-                        <div class = "logo_tr">
-                            V
-                        </div>
-                        <div class = "logo_cl">
-                            E
-                        </div>
-                        <div class = "logo_cc">
-                            M
-                        </div>
-                        <div class = "logo_cr">
-                            E
-                        </div>
-                        <div class = "logo_bl">
-                            N
-                        </div>
-                        <div class = "logo_bc">
-                            <div>
-                                movement
-                            </div>
-                            <div>
-                                in the world
-                            </div>
-                        </div>
-                        <div class = "logo_br">
-                            T
-                        </div>
-                    </div>
-                </div><!--logo-->
+                
+            <div class = "logo_br">
+            T
             </div>
-        </div><!---->
+        </div>  <!--div id="logo" class = "logo"-->
+    </div> <!--div id = "logo_wrapper"-->
 
-        <div id = "layout_wrapper">
-            <div id = "v_layout">
-                <div id = "about_layout" class = "layout"></div>
-                <div id = "movement_layout" class = "layout"></div>
-                <div id = "h_layout" class="layout">
-                    <div id="issue_layout" class="layout"></div>
-                    <div id = "photoWall_layout" class="layout"></div>
-                </div>
-                <div id="discuss_layout" class="layout"></div>
-                <div id="help_layout" class="layout"></div>
+    <ul id = "menu">
+        <li id = "menu_aboutus" class = "menu" onClick="_gaq.push(['_trackEvent', 'about', 'click']);" >
+            <div class ="menu_l">
+                
             </div>
-        </div>
-
-        <div id="image_cropper" class = "yui-skin-sam">
-            <form action="upload.php" enctype="multipart/form-data" method="post" name="uploadForm" id="uploadForm">
-                Image :
-                <input type="file" name="uploadImage" id="uploadImage" />
-                <input type="button" id="uploadButton" value="Upload"/>
-                <input type="button" id="image_confirm" value="Done">
-                <input type="button" id="image_cancel" value="Cancel">
-            </form>
-            <div id="imageContainer"></div>
-        </div>
-
-        <div id = "logo_wrapper">
-            <div id="logo" class = "logo">
-                <div class = "logo_tl">
-                    M
-                </div>
-                <div class = "logo_tc">
-                    O
-                </div>
-                <div class = "logo_tr">
-                    V
-                </div>
-                <div class = "logo_cl">
-                    E
-                </div>
-                <div class = "logo_cc">
-                    M
-                </div>
-                <div class = "logo_cr">
-                    E
-                </div>
-                <div class = "logo_bl">
-                    N
-                </div>
-                <div class = "logo_bc">
-                    <div>
-                        movement
-                    </div>
-                    <div>
-                        in the world
-                    </div>
-                </div>
-                <div class = "logo_br">
-                    T
-                </div>
+                
+            <div>
+            about.
             </div>
-        </div><!--logo-->
+                
+            <div class = "menu_icon">
+                <img src="img/menu/about-icon.png"/>
+            </div>
+            
+            <div class ="menu_r">
 
-        <ul id = "menu">
-            <li id = "menu_aboutus" class = "menu" onClick="_gaq.push(['_trackEvent', 'about', 'click']);" >
-                <div class ="menu_l"></div>
-                <div>
-                    about.
-                </div>
-                <div class = "menu_icon">
-                    <img src="img/menu/about-icon.png"/>
-                </div>
-                <div class ="menu_r"></div>
-            </li>
-            <li id = "menu_movement" class = "selected menu" onClick="_gaq.push(['_trackEvent', 'movement', 'click']);">
-                <div class ="menu_l"></div>
-                <div>
-                    movement.
-                </div>
-                <div class = "menu_icon">
-                    <img src="img/menu/moveicon.png" />
-                </div>
-                <div class ="menu_r"></div>
-            </li>
-            <li id = "menu_issue" class = "menu" onClick="_gaq.push(['_trackEvent', 'issue', 'click']);">
-                <div class ="menu_l"></div>
-                <div>
-                    issue.
-                </div>
-                <div class = "menu_icon">
-                    <img src="img/menu/issue-icon.png"/>
-                </div>
-                <div class ="menu_r"></div>
-            </li>
-            <li id = "menu_discuss" class = "menu" onClick="_gaq.push(['_trackEvent', 'discuss', 'click']);">
-                <div class ="menu_l"></div>
-                <div>
-                    discuss.
-                </div>
-                <div class = "menu_icon">
-                    <img src="img/menu/discuss-icon.png"/>
-                </div>
-                <div class ="menu_r"></div>
-            </li>
-            <li id = "menu_help" class = "menu" onClick="_gaq.push(['_trackEvent', 'help', 'click']);">
-                <div class ="menu_l"></div>
-                <div>
-                    help.
-                </div>
-                <div class = "menu_icon">
-                    <img src="img/menu/helpicon.png"/>
-                </div>
-                <div class ="menu_r"></div>
-            </li>
-            <li id = "menu_login" class = "menu" current_page = "menu_movement">
-                <div class ="menu_l"></div>
-                <div class = "text">
-                    sign in.
-                </div>
-                <div class = "menu_icon2"></div>
-                <div class = "menu_icon">
-                    <img src="img/menu/login-ba-sh.png"/>
-                    <form>
-                        <div class="member_photo">
-                            <img src="user_images/thumb/default.png" class="member_photo" id="user_photo"/>
-                            <p class="member_photo">
+            </div>
+        </li>
+            
+        <li id = "menu_movement" class = "selected menu" onClick="_gaq.push(['_trackEvent', 'movement', 'click']);">
+            <div class ="menu_l">
+                
+            </div>
+                
+            <div>
+            movement.
+            </div>
+                
+            <div class = "menu_icon">
+                <img src="img/menu/moveicon.png" />
+            </div>
+                
+            <div class ="menu_r"></div>
+        </li>
+            
+        <li id = "menu_issue" class = "menu" onClick="_gaq.push(['_trackEvent', 'issue', 'click']);">
+            <div class ="menu_l">
+                
+            </div>
+                
+            <div>
+            issue.
+            </div>
+                
+            <div class = "menu_icon">
+                <img src="img/menu/issue-icon.png"/>
+            </div>
+                
+            <div class ="menu_r">
+                
+            </div>
+        </li>
+            
+        <li id = "menu_discuss" class = "menu" onClick="_gaq.push(['_trackEvent', 'discuss', 'click']);">
+            <div class ="menu_l">
+                
+            </div>
+                
+            <div>
+            discuss.
+            </div>
+                
+            <div class = "menu_icon">
+                <img src="img/menu/discuss-icon.png"/>
+            </div>
+                
+            <div class ="menu_r">
+                
+            </div>
+        </li>
+            
+        <li id = "menu_help" class = "menu" onClick="_gaq.push(['_trackEvent', 'help', 'click']);">
+            <div class ="menu_l">
+                
+            </div>
+                
+            <div>
+            help.
+            </div>
+                
+            <div class = "menu_icon">
+                <img src="img/menu/helpicon.png"/>
+            </div>
+                
+            <div class ="menu_r">
+                
+            </div>
+        </li>
+            
+        <li id = "menu_login" class = "menu" current_page = "menu_movement">
+            <div class ="menu_l">
+                
+            </div>
+                
+            <div class = "text">
+            sign in.
+            </div>
+                
+            <div class = "menu_icon2">
+                
+            </div>
+                
+            <div class = "menu_icon">
+                <img src="img/menu/login-ba-sh.png"/>
+                <form>
+                    <div class="member_photo">
+                        <img src="user_images/thumb/default.png" class="member_photo" id="user_photo"/>
+                        <p class="member_photo">
                             <p class="user_name">
-                                Demo
+                            Demo
                             </p>
-                            </p>
-                        </div><!--photo-->
-                        <input type="text"  placeholder="ID NUMBER" class = "id"/>
-                        <input type="password"  placeholder="PASSWORD" class = "password"/>
-                        <button type="button" class = "login">
-                            Sign in
+                        </p>
+                    </div>  <!--div class="member_photo"-->
+                    <input type="text"  placeholder="ID NUMBER" class = "id"/>
+                    <input type="password"  placeholder="PASSWORD" class = "password"/>
+                    <button type="button" class = "login">
+                    Sign in
+                    </button>
+                    <button type="button" class = "register">
+                    Register
+                    </button>
+                    <div class = "other_account">
+                        <h2>Sign in with :</h2>
+                        <button type="button" class = "facebook"><img src = "img/menu/fb-lo.png" />
                         </button>
-                        <button type="button" class = "register">
-                            Register
+                        <button type="button" class = "twitter"><img src = "img/menu/tw-lo.png" />
                         </button>
-                        <div class = "other_account">
-                            <h2>Sign in with :</h2>
-                            <button type="button" class = "facebook"><img src = "img/menu/fb-lo.png" />
-                            </button>
-                            <button type="button" class = "twitter"><img src = "img/menu/tw-lo.png" />
-                            </button>
-                            <button type="button" class = "google_plus"><img src = "img/menu/go-lo.png" />
-                            </button>
-                        </div><!--other acc-->
-                    </form>
-                </div>
-                <div class ="menu_r"></div>
-            </li>
-        </ul><!--menu-->
+                        <button type="button" class = "google_plus"><img src = "img/menu/go-lo.png" />
+                        </button>
+                    </div> <!--div class = "other_account"-->
+                </form>
+            </div> <!--div class = "menu_icon"-->
+            <div class ="menu_r">
+                
+            </div>
+        </li>
+        <!--li id = "menu_login" class = "menu" current_page = "menu_movement"-->
+    </ul> <!--ul id = "menu"-->
 
-        <footer>
-            Copyright(c)2013 NCKU,Movement. All Rights Reserved.
-        </footer>
-        <!--<img src = "img/login/lo-in04.jpg" class = "design_template"/>-->
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script type="text/javascript" src="http://yui.yahooapis.com/2.9.0/build/yuiloader/yuiloader-min.js"></script>
-        <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/jquery.transit.min.js"></script>
-        <script src="js/jquery.mousewheel.js"></script>
+    <footer>
+    Copyright(c)2013 NCKU,Movement. All Rights Reserved.
+    </footer>
+        
+    <!--<img src = "img/login/lo-in04.jpg" class "design_template"/>-->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://yui.yahooapis.com/2.9.0/build/yuiloader/yuiloader-min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.transit.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
 
-        <script src="js/time_line.js"></script>
-        <script src="js/movement.js"></script>
-        <script src="js/animate.js"></script>
-        <script src="js/logo.js"></script>
-        <script src="js/menu.js"></script>
-        <script src="js/yui_image_crop.js"></script>
-        <script src="js/main.js"></script>
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-40403508-1']);
-            _gaq.push(['_trackPageview']);
+    <script src="js/time_line.js"></script>
+    <script src="js/movement.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/logo.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/yui_image_crop.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-40403508-1']);
+        _gaq.push(['_trackPageview']);
 
-            (function() {
-                var ga = document.createElement('script');
-                ga.type = 'text/javascript';
-                ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0];
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+            })();
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-40579300-5']);
+        _gaq.push(['_setDomainName', 'ee.ncku.edu.tw']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
                 s.parentNode.insertBefore(ga, s);
             })();
-
-        </script>
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-40579300-5']);
-            _gaq.push(['_setDomainName', 'ee.ncku.edu.tw']);
-            _gaq.push(['_setAllowLinker', true]);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-                var ga = document.createElement('script');
-                ga.type = 'text/javascript';
-                ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(ga, s);
-            })();
-
-        </script>
-
-    </body>
+    </script>
+</body>
 </html>
