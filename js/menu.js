@@ -142,14 +142,14 @@ function check_login_data(id, pw) {
     if (!id.length) {
         errmsg.push({
             id : "id",
-            msg : "隢撓�付D"
+            msg : "請輸入ID"
         });
         check = false;
     } else if (!pw.length) {
         check = false;
         errmsg.push({
             id : "password",
-            msg : "隢撓�亙�蝣�
+            msg : "請輸入密碼"
         });
     }
 
@@ -160,7 +160,6 @@ function check_login_data(id, pw) {
 }//check_login_data
 
 function set_menu_size() {
-    return false;
     var ratio = get_scale_ratio();
 
     console.log("menu ratio" + ratio);
