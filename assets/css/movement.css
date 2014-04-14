@@ -1,18 +1,158 @@
-.movement_disaply_mode{
-	border-bottom:5px gray;
-	height:60px;
-	width:800px;
+#movement_layout{
+	width:1280px;
+	height:800px;
+}
+
+/*tag bar*/
+.movement_display_mode {
+	position:fixed;
+	width:80%;
+	height:120px;
+	left:192px;
+	border-bottom:#B5B5B5 2px solid;
+	display:inline-block;
 }
 
 .movement_display_mode li{
-	list-style: none;
-	display: inline-block;
+	float:left;
+	overflow: hidden; /* 超過範圍隱藏 */
+	white-space: nowrap; /* 不斷行 */
+	margin:95px 0 5px 0;
+	padding:0;
+	height:47px;
 }
 
-.movement_disaply_mode img{
-	width:10px;
+.tag_type {
+	position:relative;
 }
 
-.none_selected{
+.display_type {
+	position:relative;
+	left:100px;
+}
+
+.tag_type li {
+	width:6%;
+}
+
+.tag_type img, .display_type img{
+	height:20px;
+}
+
+.none_selected {
 	display:none;
 }
+/*tag bar*/
+
+/*calendar*/
+#movement_calender {
+    background: transparent;
+	top:8%;
+    height: 7%;
+    margin: 0;
+    position: absolute;
+    width: 82%;
+    left: 5%
+}
+
+#movement_month_list {
+    font-family: "Futura Oblique";
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 50%;
+    list-style: none inside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 100.5%;
+}
+#movement_month_list .month_list {
+    cursor: pointer;
+    position: relative;
+    width:7%;
+    height: 100%;
+    margin: 30px 0;
+    padding: 0;
+}
+#movement_month_list .month_list span {
+    color: #b5b5b5;
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s; /* Firefox 4 */
+    -webkit-transition-duration: 0.7s; /* Safari and Chrome */
+    -o-transition-duration: 0.7s; /* Opera */
+    transition-property: top left;
+    -moz-transition-property: top left; /* Firefox 4 */
+    -webkit-transition-property: top left; /* Safari and Chrome */
+    -o-transition-property: top left; /* Opera */
+}
+#movement_month_list [month] span, #movement_month_list:hover .selected span {
+    color: #b5b5b5;
+    top: 0;
+    left: 7%;
+}
+#movement_month_list .selected span, #movement_month_list .month_list:hover[month] span {
+    top: -74%;
+    left: 7%;
+    color: white;
+    font-weight: bold;
+}
+#movement_month_list .month_list:not([month]):hover span {
+    top: -74%;
+    left: 1.6%;
+    color: white;
+}
+
+#movement_month_list .month_list .circle, #movement_month_list:hover .selected .circle {
+    background-color: white;
+    border: 5px solid #00A1E6;
+    border-radius: 100% 100% 100% 100%;
+    height: 35.7%;
+    left: 3%;
+    position: absolute;
+    top: -70%;
+    width: 13.5%;
+    transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s; /* Firefox 4 */
+    -webkit-transition-duration: 0.7s; /* Safari and Chrome */
+    -o-transition-duration: 0.7s; /* Opera */
+    transition-property: height width top left;
+    -moz-transition-property: height width top left; /* Firefox 4 */
+    -webkit-transition-property: height width top left; /* Safari and Chrome */
+    -o-transition-property: height width top left; /* Opera */
+}
+#movement_month_list .selected .circle, #movement_month_list .month_list:hover[month] .circle {
+    border: 5px solid #00A1E6;
+    background-color: #00A1E6;
+    height: 107.1%;
+    left: 0%;
+    top: -101%;
+    width: 40.54%;
+}
+#movement_month_list .month_list:not([month]) .circle {
+    background-clip: content-box;
+    background-color: #00A1E6;
+    border-color: transparent;
+    height: 32.1375%;
+    left: 0%;
+    top: -74%;
+    width: 12.375%;
+}
+#movement_month_list .month_list:not([month]):hover .circle {
+    background-clip: border-box;
+    background-color: #00A1E6;
+    height: 125%;
+    left: 1%;
+    top: -110%;
+    width: 47.3%;
+}
+/*calendar*/
