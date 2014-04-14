@@ -1,0 +1,18 @@
+.movement_disaply_mode{
+	border-bottom:5px gray;
+	height:60px;
+	width:800px;
+}
+
+.movement_display_mode li{
+	list-style: none;
+	display: inline-block;
+}
+
+.movement_disaply_mode img{
+	width:10px;
+}
+
+.none_selected{
+	display:none;
+}
