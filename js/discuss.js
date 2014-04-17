@@ -39,7 +39,7 @@
         var topicID = $(".discuss_list.selected").attr("topic_id");
         var topicName = $(".discuss_list.selected > p").text();
         var base_url = "";
-        var url = base_url + "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/codeigniter/index.php/discuss/senddiscusscomment";
+        var url = base_url + "http://movement.ee.ncku.edu.tw/codeigniter/index.php/discuss/senddiscusscomment";
         $.post(url, {
             "comment" : text,
             "title" : topicName,
@@ -66,7 +66,7 @@
     $("#discuss_new_submit").click(function() {
         var new_topic = $("#article_topic_type").val().toString();
         var first_comment = $(".article_edit > .article_edit_type").val().toString();
-        var base_url = "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/codeigniter/index.php/discuss/newtopic";
+        var base_url = "http://movement.ee.ncku.edu.tw/codeigniter/index.php/discuss/newtopic";
         var url = base_url + "";
         var regex = /[\n\s]+/g
         if (new_topic.replace(regex, "").replace("\n", "").length < 5) {
@@ -147,7 +147,7 @@ function discuss_list_html(id, name, isNew, firstSelect) {
 //fwh_edit
 function topic_list() {
     var base_url = "";
-    var url = base_url + "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/codeigniter/index.php/discuss/getdistopic";
+    var url = base_url + "http://movement.ee.ncku.edu.tw/codeigniter/index.php/discuss/getdistopic";
     var firstSelected = 1;
     //test "select";
     var firstNew = 1;
@@ -179,7 +179,7 @@ function topic_list() {
 function discuss_article(titleName) {
     //return;
     var base_url = "";
-    var url = base_url + "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/codeigniter/index.php/discuss/popdiscommentbyname";
+    var url = base_url + "http://movement.ee.ncku.edu.tw/codeigniter/index.php/discuss/popdiscommentbyname";
     $.post(url, {
         "name" : titleName
     }, function(response) {
@@ -193,8 +193,8 @@ function discuss_article(titleName) {
 
         $("#discuss_reply_wrapper div.rate_number").click(function() {
             //alert("click");
-            var url = "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/codeigniter/index.php/discuss/dlike";
-            var d_url = "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/codeigniter/index.php/discuss/ddislike";
+            var url = "http://movement.ee.ncku.edu.tw/codeigniter/index.php/discuss/dlike";
+            var d_url = "http://movement.ee.ncku.edu.tw/codeigniter/index.php/discuss/ddislike";
             var commentid = $(this).parents().eq(1).attr('reply_id');
             var $obj = $(this);
             var rate = $obj.hasClass("agree_number") ? "agree" : "disagree";

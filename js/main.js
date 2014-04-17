@@ -552,7 +552,7 @@ function load_page() {
 }//load page
 
 function check_login() {
-    var base_url = "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/member/login/";
+    var base_url = "http://movement.ee.ncku.edu.tw/member/login/";
     var URL = base_url + "check_login.php";
     $.post(URL, {}, function(data) {
         console.log(data);
@@ -576,12 +576,16 @@ function check_login() {
 }//check login
 
 function fb_login() {
-    window.open("http://merry.ee.ncku.edu.tw/~smart0eddie/cur/member/FB/FB_mid.php", 'FB login', config = 'height=650,width=650 ,scrollbars=1,resizable=0');
+    window.open("http://movement.ee.ncku.edu.tw/member/FB/FB_mid.php", 'FB login', config = 'height=650,width=650 ,scrollbars=1,resizable=0');
 }//fb login
 
 function google_login() {
-    window.open("http://merry.ee.ncku.edu.tw/~smart0eddie/cur/member/Google/Google_mid.php", 'Google+ login', config = 'height=650,width=650 ,scrollbars=1,resizable=0');
+    window.open("http://movement.ee.ncku.edu.tw/member/Google/Google_mid.php", 'Google+ login', config = 'height=650,width=650 ,scrollbars=1,resizable=0');
 }//google login
+
+function twitter_login() {
+    window.open("http://movement.ee.ncku.edu.tw/member/Twitter/Twitter_mid.php", 'Twitter+ login', config = 'height=650,width=650 ,scrollbars=1,resizable=0');
+}//twitter login
 
 function fb_login_data(data) {
     data = JSON.parse(data);
@@ -616,7 +620,27 @@ function google_login_data(data) {
         }
         logout_mod();
     }
-}//fb login
+}//google login
+
+//fix
+function twitter_login_data(data) {
+    data = JSON.parse(data);
+    console.log(data);
+    if (data.check_login) {
+        data.twitterlogin = true;
+        window.sessionStorage.photo = data.photo;
+        login_mod(data);
+        console.log("Twitter login msg");
+        $('#member input[name="id"]').attr("disabled","disabled");
+        $('#member input[name="pw"]').attr("disabled","disabled");
+    } else {
+        if (data.errmsg) {
+            alert(data.errmsg);
+        }
+        logout_mod();
+    }
+}//twitter login
+
 
 function hash_change(event) {
     if (window.location.hash) {
@@ -677,7 +701,7 @@ function hash_decode() {
 
 function share(target, type, id) {
     var url = "";
-    var base_url = "merry.ee.ncku.edu.tw/~smart0eddie/cur/";
+    var base_url = "movement.ee.ncku.edu.tw/";
     var hash_tag = "%23";
 
     switch(type) {

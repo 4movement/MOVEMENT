@@ -14,12 +14,14 @@ function initial_menu() {
     $("#menu_login .facebook").click(fb_login);
     
     $("#menu_login .google_plus").click(google_login);
+
+    $("#menu_login .twitter").click(twitter_login);
 }
 
 function click_login(event) {
     var id = $("#menu_login input.id").val();
     var pw = $("#menu_login input.password").val();
-    var base_url = "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/member/login/";
+    var base_url = "http://movement.ee.ncku.edu.tw/member/login/";
     var URL = base_url + "connect.php";
 
     var check = check_login_data(id, pw);
@@ -50,7 +52,7 @@ function click_login(event) {
 }//login
 
 function click_logout(event) {
-    var base_url = "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/member/login/";
+    var base_url = "http://movement.ee.ncku.edu.tw/member/login/";
     var URL = base_url + "logout.php";
 
     $.post(URL, {
@@ -160,7 +162,8 @@ function check_login_data(id, pw) {
 }//check_login_data
 
 function set_menu_size() {
-    var ratio = get_scale_ratio();
+
+    var ratio = get_scale_ratio();
 
     console.log("menu ratio" + ratio);
 

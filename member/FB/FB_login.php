@@ -14,7 +14,7 @@ if ($error) {
 
     //$FB_result["code"] = $code;
 
-    $get_accesstoken_url = "https://graph.facebook.com/oauth/access_token?client_id=357084021063217" . "&redirect_uri=http://merry.ee.ncku.edu.tw/~smart0eddie/cur/member/FB/FB_login.php" . "&client_secret=fcd49d763817498f868a050c30900d13" . "&code=" . $code;
+    $get_accesstoken_url = "https://graph.facebook.com/oauth/access_token?client_id=357084021063217" . "&redirect_uri=http://movement.ee.ncku.edu.tw/member/FB/FB_login.php" . "&client_secret=fcd49d763817498f868a050c30900d13" . "&code=" . $code;
 
     //抓資訊
     $ch = curl_init();
