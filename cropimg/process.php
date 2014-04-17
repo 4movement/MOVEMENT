@@ -17,7 +17,7 @@
 
 	if(!empty($_FILES)){
 		$name="picture";
-		$uploadFile="http://merry.ee.ncku.edu.tw/~smart0eddie/swd_ex11/cropimg/uploads/";
+		$uploadFile="http://movement.ee.ncku.edu.tw/cropimg/uploads/";
 		$maxLen=9*1024*1024;
 		$result=PIPHP_UploadFIle($name,$uploadFile,$maxLen);
 		

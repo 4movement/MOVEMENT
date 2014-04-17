@@ -1,16 +1,15 @@
 <?
 $code = $_REQUEST['code'];
-$error = $_REQUES["error"];
-if ($error) {
+if ($code!=200) {
     echo "<script type='text/javascript'>";
-    echo "opener.google_login_data('" . json_encode($error) . "');";
+    echo "opener.Twitter_login_data('" . json_encode($error) . "');";
     echo "self.close();";
     echo "</script>";
 } else {
 	
-	$client_id = "255017338850.apps.googleusercontent.com";
-	$client_secret = "Cu06R6aHkbqXptx56htzuRnB";
-	$redirect_uri = "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/member/Google/Google_login.php";
+	$client_id = "1568080434.apps.googleusercontent.com";
+	$client_secret = "PuebLoAyOkCGS2INgpiDSEeQl3iIwtmvD37u04fwo";
+	$redirect_uri = "http://movement.ee.ncku.edu.tw/member/Twitter/Twitter_login.php";
 	
     $Google_result = array();
 

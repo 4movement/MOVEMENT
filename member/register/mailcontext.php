@@ -10,9 +10,9 @@ include("../mysql_connect.php");
 		$finalstr = strtoupper(substr("$longstr",$rat,8));
 		//產生信中快速認證連結
 		$foremailid = $_SESSION['foremailid'];
-		$chklink = "<a href = http://merry.ee.ncku.edu.tw/~smart0eddie/cur/member/register/verify.php?verify_id=$foremailid&finalstr=$finalstr>
+		$chklink = "<a href = http://movement.ee.ncku.edu.tw/member/register/verify.php?verify_id=$foremailid&finalstr=$finalstr>
 		請點擊此認證</a>";
-		$help = "<a href = http://merry.ee.ncku.edu.tw/~smart0eddie/cur/#help>
+		$help = "<a href = http://movement.ee.ncku.edu.tw/#help>
 		請點擊此前往help專區</a>";
 		//設定資料庫finalstr
 		$setfinalstr = "update mem_db set finalstr = '$finalstr' where id = '$foremailid'";
