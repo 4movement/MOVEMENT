@@ -111,7 +111,7 @@ if($id != null && $pw != null && $pwcheck != null && $pw == $pwcheck){
 else{
         echo "<script type='text/javascript'>";
 		echo "alert('您無權限觀看此頁面');";
-		echo "window.location.href = 'http://merry.ee.ncku.edu.tw/~smart0eddie/cur/';";
+		echo "window.location.href = 'http://movement.ee.ncku.edu.tw/';";
 		echo "</script>";
 }
 ?>

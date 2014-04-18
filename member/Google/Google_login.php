@@ -10,7 +10,7 @@ if ($error) {
 	
 	$client_id = "255017338850.apps.googleusercontent.com";
 	$client_secret = "Cu06R6aHkbqXptx56htzuRnB";
-	$redirect_uri = "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/member/Google/Google_login.php";
+	$redirect_uri = "http://movement.ee.ncku.edu.tw/member/Google/Google_login.php";
 	
     $Google_result = array();
 

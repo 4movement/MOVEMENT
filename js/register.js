@@ -91,7 +91,7 @@ function initial_register() {
     });
 
     $("#register_data .submit").click(function(event) {
-        var base_url = "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/register/";
+        var base_url = "http://movement.ee.ncku.edu.tw/register/";
         var URL = base_url + "register.php";
         var id = $("#register_data input[name = 'id']").val();
         var pw = $("#register_data input[name = 'password']").val();
@@ -141,10 +141,14 @@ function initial_register() {
         fb_login();
     });
     //fb register
-    //register with other account
-    //event
-    
-
+    $(".other_account .google_plus").click(function() {
+        google_login();
+    });
+    //google register
+    $(".other_account .twitter").click(function() {
+        twitter_login();
+    });
+    //twitter register
 }
 
 function set_register_size() {

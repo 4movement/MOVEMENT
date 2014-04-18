@@ -15,7 +15,7 @@ include("../mysql_connect.php");
 		mysql_query($setverify);
 		echo "<script type='text/javascript'>";
 		echo "alert('您的帳號啟用成功');";
-		echo "window.location.href = 'http://merry.ee.ncku.edu.tw/~smart0eddie/cur/';";
+		echo "window.location.href = 'http://movement.ee.ncku.edu.tw/';";
 		echo "</script>";
 	}
 	else{
