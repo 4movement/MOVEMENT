@@ -423,14 +423,14 @@ function load_page() {
     });
     */
 
-    $.getScript("js/about.js", function() {
+    $.getScript("assets/js/about.js", function() {
         about_count--;
         if (!about_count) {
             console.log("about_us ini");
             initial_about();
         }
     });
-    $.getScript("js/jquery.adipoli.js", function() {
+    $.getScript("assets/js/jquery.adipoli.js", function() {
         about_count--;
         if (!about_count) {
             console.log("about_us ini");
@@ -439,6 +439,9 @@ function load_page() {
     });
 
     var discuss_count = 2;
+    // larry 20140419 marked
+    // refer to the above movement.html
+    /*
     $("#discuss_layout").load("discuss.html .wrapper", function() {
         discuss_count--;
         if (!discuss_count) {
@@ -446,7 +449,8 @@ function load_page() {
             initial_discuss();
         }
     });
-    $.getScript("js/discuss.js", function() {
+*/
+    $.getScript("assets/js/discuss.js", function() {
         discuss_count--;
         if (!discuss_count) {
             console.log("discuss ini");
