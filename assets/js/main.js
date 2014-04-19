@@ -398,12 +398,22 @@ function logout_mod() {
 }//log out
 
 function load_page() {
+    // larry 20140419 marked: this goes to 
+    // http://localhost:8888/MOVEMENT/movement.html
+    // movement.html needs to be first defined in controller,
+    // then javascript can access.
+    /*
     $("#movement_layout").load("movement.html .wrapper", function() {
         console.log("movement ini");
         initial_movement();
     });
+    */
 
     var about_count = 3;
+
+    // larry 20140419 marked
+    // refer to the above movement.html
+    /*
     $("#about_layout").load("about_us.html .wrapper", function() {
         about_count--;
         if (!about_count) {
@@ -411,6 +421,8 @@ function load_page() {
             initial_about();
         }
     });
+    */
+
     $.getScript("js/about.js", function() {
         about_count--;
         if (!about_count) {
