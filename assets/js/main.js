@@ -476,7 +476,8 @@ function load_page() {
             initial_photoWall();
         }
     });
-    $.getScript("js/issue.js", function() {
+
+    $.getScript("assets/js/issue.js", function() {
         issue_count--;
         if (!issue_count) {
             console.log("issue ini")
@@ -489,8 +490,9 @@ function load_page() {
             initial_photoWall();
         }
     });
-    $.getScript("js/jqvmap/jquery.vmap.js", function() {
-        $.getScript("js/jqvmap/maps/jquery.vmap.world.js", function(result) {
+
+    $.getScript("assets/js/jqvmap/jquery.vmap.js", function() {
+        $.getScript("assets/js/jqvmap/maps/jquery.vmap.world.js", function(result) {
             issue_count--;
             map_path = result;
             if (!issue_count) {
@@ -499,7 +501,8 @@ function load_page() {
             }
         });
     });
-    $.getJSON("js/jqvmap/data/jqvmap_sampledata.json", function(result) {
+
+    $.getJSON("assets/js/jqvmap/data/jqvmap_sampledata.json", function(result) {
         issue_count--;
         map_data = result;
         if (!issue_count) {
@@ -507,14 +510,16 @@ function load_page() {
             initial_issue(map_data, map_path);
         }
     });
-    $.getScript("js/jquery.masonry.min.js", function() {
+
+    $.getScript("assets/js/jquery.masonry.min.js", function() {
         photoWall_count--;
         if (!photoWall_count) {
             console.log("guest book ini");
             initial_photoWall();
         }
     });
-    $.getScript("js/imagesloaded.pkgd.min.js", function() {
+
+    $.getScript("assets/js/imagesloaded.pkgd.min.js", function() {
         photoWall_count--;
         if (!photoWall_count) {
             console.log("guest book ini");
@@ -530,14 +535,16 @@ function load_page() {
             initial_help();
         }
     });
-    $.getScript("js/help.js", function() {
+
+    $.getScript("assets/js/help.js", function() {
         help_count--;
         if (help_count <= 0) {
             console.log("help ini")
             initial_help();
         }
     });
-    $.getScript("js/turn.js", function() {
+
+    $.getScript("assets/js/turn.js", function() {
         help_count--;
         if (help_count <= 0) {
             console.log("help ini")
@@ -549,6 +556,10 @@ function load_page() {
     $("#logo_wrapper").append("<div id = 'member_wrapper' ></div>");
 
     var reg_count = 2;
+
+    // larry 20140419 marked
+    // refer to the above movement.html
+    /*
     $("#register_wrapper").load("register1.html #register_wrapper2", function(data) {
         $("#register_wrapper2").hide();
         reg_count--;
@@ -557,7 +568,9 @@ function load_page() {
             initial_register();
         }
     });
-    $.getScript("js/register.js", function() {
+*/
+
+    $.getScript("assets/js/register.js", function() {
         reg_count--;
         if (!reg_count) {
             console.log("reg ini");
