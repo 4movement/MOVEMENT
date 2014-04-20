@@ -38,7 +38,9 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+// larry 20140420
+//$route['default_controller'] = "welcome";
+$route['default_controller'] = "movement";
 $route['404_override'] = '';
 
 
