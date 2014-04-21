@@ -1,5 +1,6 @@
 <?php
 session_start();
+header("Access-Control-Allow-Origin: *");
 
 $member_data = array();
 header('Content-type: application/json');
