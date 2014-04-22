@@ -377,6 +377,9 @@ function logout_mod() {
         $("#register_wrapper").addClass("loading");
 
         var register_count = 2;
+
+        // larry 20140422 marked
+        /*
         $("#register_wrapper").load("register1.html #register_wrapper2", function(data) {
             $("#register_wrapper2").hide();
             register_count--;
@@ -386,7 +389,9 @@ function logout_mod() {
                 initial_register();
             }
         });
-        $.getScript("js/register.js", function() {
+*/
+
+        $.getScript("assets/js/register.js", function() {
             register_count--;
             if (!register_count) {
                 console.log("reg ini");
