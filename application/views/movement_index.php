@@ -213,6 +213,7 @@
 
     <script src="assets/js/movement.js"></script>
     <script src="assets/js/logo.js"></script>
+    <script src="assets/js/menu.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
