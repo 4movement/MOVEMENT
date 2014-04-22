@@ -18,6 +18,7 @@ local.properties
 mailsender.php
 mysql_connect.php
 database.php
+sftp-config.json
 
 # External tool builders
 .externalToolBuilders/
