@@ -21,7 +21,7 @@ function initial() {
     var hash = hash_decode();
     window.onhashchange = hash_change;
 
-    check_login();
+    //check_login();
     load_page();
 
 }//initial
@@ -29,7 +29,7 @@ function initial() {
 function set_size() {
     set_layout();
     set_wrapper_size();
-	return false;//停止調整大小
+	return;// false;//停止調整大小
 	
     if ( typeof set_menu_size == 'function') {
         set_menu_size();
