@@ -40,8 +40,9 @@
 
 // larry 20140420
 //$route['default_controller'] = "welcome";
-$route['default_controller'] = "movement";
+$route['default_controller'] = "movement_index";
 $route['404_override'] = '';
+$route['movement'] = "movement";
 
 
 /* End of file routes.php */

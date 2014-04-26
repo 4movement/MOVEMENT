@@ -41,30 +41,30 @@
 			<div class = "movement_display_mode">
 				<span class="tag_type">
 					<li class = "tag_type time">
-						<img src="../../assets/img/movement/button/mo-ti01.png" class="none_selected"  />
-						 <img src="../../assets/img/movement/button/mo-ti02.png" class="selected"/>
+						<img src="assets/img/movement/button/mo-ti01.png" class="none_selected"  />
+						 <img src="assets/img/movement/button/mo-ti02.png" class="selected"/>
 					</li>
 					<li class = "tag_type hot">
-						<img src="../../assets/img/movement/button/mo-ho01.png" class="none_selected"  />
-						<img src="../../assets/img/movement/button/mo-ho02.png" class="selected"/>
+						<img src="assets/img/movement/button/mo-ho01.png" class="none_selected"  />
+						<img src="assets/img/movement/button/mo-ho02.png" class="selected"/>
 					</li>
 					<li class = "tag_type new">
-						<img src="../../assets/img/movement/button/mo-ne01.png" class="none_selected"  />
-						<img src="../../assets/img/movement/button/mo-ne02.png" class="selected"/>
+						<img src="assets/img/movement/button/mo-ne01.png" class="none_selected"  />
+						<img src="assets/img/movement/button/mo-ne02.png" class="selected"/>
 					</li>
 					<li class = "tag_type issue">
-						<img src="../../assets/img/movement/button/mo-is01.png" class="none_selected"  />
-						<img src="../../assets/img/movement/button/mo-is02.png" class="selected"/>
+						<img src="assets/img/movement/button/mo-is01.png" class="none_selected"  />
+						<img src="assets/img/movement/button/mo-is02.png" class="selected"/>
 					</li>
 				</span><!--tag_type -->
 				<span class="display_type">
 					<li class="display_type picture">
-						<img src="../../assets/img/movement/button/mo-pi01.png" class="none_selected"  />
-						<img src="../../assets/img/movement/button/mo-pi02.png" class="selected" />
+						<img src="assets/img/movement/button/mo-pi01.png" class="none_selected"  />
+						<img src="assets/img/movement/button/mo-pi02.png" class="selected" />
 					</li>
 					<li class="display_type list">
-						<img src="../../assets/img/movement/button/mo-li01.png" class="none_selected"  />
-						<img src="../../assets/img/movement/button/mo-li02.png" class="selected" />
+						<img src="assets/img/movement/button/mo-li01.png" class="none_selected"  />
+						<img src="assets/img/movement/button/mo-li02.png" class="selected" />
 					</li>
 				</span><!--display_type -->
 			</div>

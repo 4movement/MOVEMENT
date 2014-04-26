@@ -1,3 +1,5 @@
+// larry 20140426 marked
+/*
 function load_movement() {
     var base_url = "codeigniter/";
     var url = base_url + "index.php/api";
@@ -34,6 +36,7 @@ function load_movement() {
     });
     //get json
 }//load
+*/
 
 function movement_thumb_data2html(data) {
     var id, name, category, city, intro, time, location, join, support, donate, dateStartYear, dateStartMonth, dateStartDay, pathToPhoto, host, post_account, post_time, contact_url, publisher, publisher_id;
@@ -266,13 +269,20 @@ function set_movement_datail_size() {
 
 function initial_movement() {
 
-    initial_gallery();
-    set_time_line();
-    load_movement();
+    // larry 20140426
+    //initial_gallery();
+    //set_time_line();
+    //load_movement();
+    $(".movement_thumb_wrapper").click(function() {
+        movement_detail_data($(this));
+        movement_reply_load($(this));
+    });
+
+
     set_wrapper_size();
     set_movement_size();
     hash_decode();
-    op_animate2();   
+    //op_animate2();   
     //fwh_edit discuss_submit_comment
     $(".submit.button").click(movement_reply_submit);
 
