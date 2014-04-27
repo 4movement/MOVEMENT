@@ -211,6 +211,7 @@
     <script src="assets/js/jquery.transit.min.js"></script>
 	<script src="assets/js/jquery.mousewheel.js"></script>
 
+    <script src="assets/js/about.js"></script>
     <script src="assets/js/movement.js"></script>
     <script src="assets/js/logo.js"></script>
     <script src="assets/js/menu.js"></script>
