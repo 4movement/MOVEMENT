@@ -21,14 +21,12 @@
     <link rel = "stylesheet" href = "assets/css/logo.css">
 </head>
 <body >
-
     <div id = "layout_wrapper">
         <div id = "v_layout">
             <div id = "movement_layout" class = "layout">
             </div>
         </div>
     </div>
-
     <div id="image_cropper" class = "yui-skin-sam">
         <form action="upload.php" enctype="multipart/form-data" method="post" name="uploadForm" id="uploadForm">
             Image :
@@ -38,132 +36,93 @@
             <input type="button" id="image_cancel" value="Cancel">
         </form>
         <div id="imageContainer">
-            
         </div>
     </div>
-
     <div id = "logo_wrapper">
         <div id="logo" class = "logo">
             <div class = "logo_tl">
             M
             </div>
-            
             <div class = "logo_tc">
             O
             </div>
-                
             <div class = "logo_tr">
             V
             </div>
-                
             <div class = "logo_cl">
             E
             </div>
-                
             <div class = "logo_cc">
             M
             </div>
-                
             <div class = "logo_cr">
             E
             </div>
-                
             <div class = "logo_bl">
             N
             </div>
-                
             <div class = "logo_bc">
                 <div>
                 movement
                 </div>
-                    
                 <div>
                 in the world
                 </div>
             </div>
-                
             <div class = "logo_br">
             T
             </div>
         </div>  <!--div id="logo" class = "logo"-->
     </div> <!--div id = "logo_wrapper"-->
-
     <ul id = "menu">
         <li id = "menu_aboutus" class = "menu" onClick="_gaq.push(['_trackEvent', 'about', 'click']);" >
             <div class ="menu_l">
-                
             </div>
-                
             <div>
             about.
             </div>
-                
             <div class = "menu_icon">
                 <img src="assets/img/menu/about-icon.png"/>
             </div>
-         
         </li>
-            
         <li id = "menu_movement" class = "selected menu" onClick="_gaq.push(['_trackEvent', 'movement', 'click']);">
             <div class ="menu_l">
-                
             </div>
-                
             <div>
             movement.
             </div>
-                
             <div class = "menu_icon">
                 <img src="assets/img/menu/moveicon.png" />
             </div>
-                
-
         </li>
-            
         <li id = "menu_issue" class = "menu" onClick="_gaq.push(['_trackEvent', 'issue', 'click']);">
             <div class ="menu_l">
-                
             </div>
-                
             <div>
             issue.
             </div>
-                
             <div class = "menu_icon">
                 <img src="assets/img/menu/issue-icon.png"/>
             </div>
-               
         </li>
-            
-            
         <li id = "menu_help" class = "menu" onClick="_gaq.push(['_trackEvent', 'help', 'click']);">
             <div class ="menu_l">
-                
             </div>
-                
             <div>
             help.
             </div>
-                
             <div class = "menu_icon">
                 <img src="assets/img/menu/helpicon.png"/>
             </div>
-
         </li>
-            
         <li id = "menu_login" class = "menu" current_page = "menu_movement">
             <div class ="menu_l">
-                
             </div>
-                
             <div class = "text">
             sign in.
             </div>
-                
             <div class = "menu_icon2">
-                
             </div>
-                
             <div class = "menu_icon">
                 <img src="assets/img/menu/login-ba-sh.png"/>
                 <form>
