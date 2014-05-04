@@ -19,7 +19,7 @@ function initial_menu() {
 function click_login(event) {
     var id = $("#menu_login input.id").val();
     var pw = $("#menu_login input.password").val();
-    var base_url = "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/member/login/";
+    var base_url = "http://movement.ee.ncku.edu.tw/member/login/";
     var URL = base_url + "connect.php";
 
     var check = check_login_data(id, pw);
@@ -50,7 +50,7 @@ function click_login(event) {
 }//login
 
 function click_logout(event) {
-    var base_url = "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/member/login/";
+    var base_url = "http://movement.ee.ncku.edu.tw/member/login/";
     var URL = base_url + "logout.php";
 
     $.post(URL, {
@@ -79,6 +79,9 @@ function click_register(event) {
 }//register
 
 function click_menu() {
+
+    console.log("menu.js functon click_menu starts");
+
     var window_h = $(window).height();
     var id = $(this).attr('id');
     var tran_y;
@@ -160,7 +163,8 @@ function check_login_data(id, pw) {
 }//check_login_data
 
 function set_menu_size() {
-    var ratio = get_scale_ratio();
+
+    var ratio = get_scale_ratio();
 
     console.log("menu ratio" + ratio);
 

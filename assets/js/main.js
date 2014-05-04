@@ -465,6 +465,10 @@ function load_page() {
     var photoWall_count = 4;
     var map_data = {};
     var map_path = {};
+
+    // larry 20140504 temp marked: need to add issue and guestboard pages 
+    // to controller 
+    /*
     $("#issue_layout").load("issue.html .wrapper", function() {
         issue_count--;
         if (!issue_count) {
@@ -479,6 +483,7 @@ function load_page() {
             initial_photoWall();
         }
     });
+*/
 
     $.getScript("assets/js/issue.js", function() {
         issue_count--;
@@ -531,6 +536,9 @@ function load_page() {
     });
 
     var help_count = 3;
+
+    // larry 20140504 temp marked: need to add help page to controller
+    /*
     $("#help_layout").load("help.html .wrapper", function() {
         help_count--;
         if (help_count <= 0) {
@@ -538,6 +546,7 @@ function load_page() {
             initial_help();
         }
     });
+*/
 
     $.getScript("assets/js/help.js", function() {
         help_count--;

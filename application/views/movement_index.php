@@ -22,9 +22,28 @@
 </head>
 <body >
 
+    <!-- map to the master branch, 3rd major div -->
     <div id = "layout_wrapper">
         <div id = "v_layout">
+            <div id = "about_layout" class = "layout">
+                
+            </div>
             <div id = "movement_layout" class = "layout">
+            
+            </div>
+            <div id = "h_layout" class="layout">
+                <div id="issue_layout" class="layout">
+                    
+                </div>
+                <div id = "photoWall_layout" class="layout">
+                    
+                </div>
+            </div>
+            <div id="discuss_layout" class="layout">
+                
+            </div>
+            <div id="help_layout" class="layout">
+                
             </div>
         </div>
     </div>

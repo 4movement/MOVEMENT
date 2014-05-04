@@ -5,7 +5,7 @@ function initial_about() {
     hash_decode();    
 
     //get script
-    $.getScript("js/jquery.adipoli.js", function() {
+    $.getScript("assets/js/jquery.adipoli.js", function() {
         //set pic black to color
         $('.s_char').adipoli({
             'startEffect' : 'normal+',
