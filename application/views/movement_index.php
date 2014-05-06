@@ -16,6 +16,8 @@
     <link rel = "stylesheet" href = "assets/css/normalize.css">
     <link rel = "stylesheet" href = "assets/css/main.css">
     <link rel = "stylesheet" href = "assets/css/font.css">
+    <link rel = "stylesheet" href = "assets/css/about.css">
+    <link rel = "stylesheet" href = "assets/css/adipoli.css">
     <link rel = "stylesheet" href = "assets/css/movement.css">
     <link rel = "stylesheet" href = "assets/css/menu.css">
     <link rel = "stylesheet" href = "assets/css/logo.css">

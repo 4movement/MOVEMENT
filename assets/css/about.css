@@ -1,0 +1,484 @@
+#design_template {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1280px;
+    height: 800px;
+    opacity: 0.5;
+    transform-origin: left top;
+    -ms-transform-origin: left top; /* IE 9 */
+    -webkit-transform-origin: left top; /* Safari and Chrome */
+    -moz-transform-origin: left top; /* Firefox */
+    -o-transform-origin: left top; /* Opera */
+    display: none;/**/
+    /*display: block;
+     z-index: 100;*/
+}
+#char_temp {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 1;
+    display: none;
+}
+
+#about_intro_wrapper {
+    position: absolute;
+    top: 13.5%;
+    left: 0px;
+    width: 100%;
+    height: 36.75%;
+    /* overflow: hidden;*/
+    /* color: red;*/
+}
+
+#big_logo {
+    height: 65.31%;
+    left: 14.8%;
+    position: absolute;
+    top: 23%;
+    width: 15%;
+}
+#big_logo img {
+    width: 100%;
+    transition-duration: 1s;
+    -moz-transition-duration: 1s; /* Firefox 4 */
+    -webkit-transition-duration: 1s; /* Safari and Chrome */
+    -o-transition-duration: 1s; /* Opera */
+    transition-property: top left;
+    -moz-transition-property: top left; /* Firefox 4 */
+    -webkit-transition-property: top left; /* Safari and Chrome */
+    -o-transition-property: top left; /* Opera */
+}
+#big_logo div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+    -moz-transition-duration: 1s; /* Firefox 4 */
+    -webkit-transition-duration: 1s; /* Safari and Chrome */
+    -o-transition-duration: 1s; /* Opera */
+    transition-property: top left;
+    -moz-transition-property: top left; /* Firefox 4 */
+    -webkit-transition-property: top left; /* Safari and Chrome */
+    -o-transition-property: top left; /* Opera */
+}
+#big_logo:hover .front {
+    top: -5%;
+    left: -5%;
+}
+#big_logo:hover .back {
+    top: 5%;
+    left: 5%;
+}
+
+#about_intro {
+    height: 89.8%;
+    position: absolute;
+    right: 17.5%;
+    text-align: center;
+    top: 10.2%;
+    width: 41%;
+}
+#about_album {
+    margin: 3.5% auto 0 auto;
+    width: 530px;
+	height: 70px;
+	display: inline-block;
+}
+.about_album_n{
+	float: left;
+	width: 13.2%;
+	margin-left: 0.566%;
+}
+.about_album_n img{
+	width: 100%;
+}
+
+#about_intro_text {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: "franklin gothic medium", "Microsoft JhengHei";
+}
+#about_intro_text h3 {
+    font-size: 1.525em;
+    font-weight: normal;
+    line-height: 1;
+    margin: 4% 0 0 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#about_intro_text h4 {
+    font-size: 1.525em;
+    font-weight: normal;
+    line-height: 1;
+    margin: 1% 0 0 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#about_intro_text h6 {
+    font-family: "Fruitger LT 55 Roman";
+    font-size: 0.85em;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    text-align: left;
+    text-decoration: none;
+}
+#about_intro_text p {
+    font-size: 0.84em;
+    line-height: 1.5;
+    margin: 4% auto;
+    width: 90%;
+}
+
+#about_intro_bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+#about_intro_bg1 {
+    box-shadow: 0px 0px 1px 1px rgba(230,190,0,0.7);
+    background-color: rgba(255,210,0,1);
+    height: 89.8%;
+    position: absolute;
+    width: 20%;
+    right:83%;
+    bottom:10.8%;
+    transform-origin: right top;
+    -ms-transform-origin: right top; /* IE 9 */
+    -webkit-transform-origin: right top; /* Safari and Chrome */
+    -moz-transform-origin: right top; /* Firefox */
+    -o-transform-origin: right top;/* Opera */
+    transform: skew(7deg, 16.5deg);
+    -ms-transform: skew(7deg, 16.5deg); /* IE 9 */
+    -moz-transform: skew(7deg, 16.5deg); /* Firefox */
+    -webkit-transform: skew(7deg, 16.5deg); /* Safari and Chrome */
+    -o-transform: skew(7deg, 16.5deg); /* Opera */
+}
+#about_intro_bg1:before {
+    box-shadow: -1px -1px 1px 1px rgba(230,190,0,0.7);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#about_intro_bg2 {
+    box-shadow: 0px 0px 1px 1px rgba(230,100,0,0.7);
+    background-color: rgba(255,115,0,1);
+    height: 89.8%;
+    position: absolute;
+    left: 7.34%;
+    bottom: 0%;
+    transform: skewY(-13.5deg);
+    width: 9.85%;
+    transform-origin: left top;
+    -ms-transform-origin: left top; /* IE 9 */
+    -webkit-transform-origin: left top; /* Safari and Chrome */
+    -moz-transform-origin: left top; /* Firefox */
+    -o-transform-origin: left top;/* Opera */
+    transform: skewY(-13.5deg);
+    -ms-transform: skewY(-13.5deg); /* IE 9 */
+    -moz-transform: skewY(-13.5deg); /* Firefox */
+    -webkit-transform: skewY(-13.5deg); /* Safari and Chrome */
+    -o-transform: skewY(-13.5deg); /* Opera */
+}
+
+#about_intro_bg3 {
+    height: 89.8%;
+    position: absolute;
+    top: 10.2%;
+    width: 93%;
+    left: 7.35%;
+}
+#about_intro_bg3 img {
+    height: 116.5%;
+    left: -1.85%;
+    position: absolute;
+    top: -8.5%;
+}
+
+#char_wrapper {
+    height: 39.625%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 50.875%;
+    width: 100%;
+}
+.char_cover {
+    box-shadow: -1px -1px 3px 1px rgba(100,100,100,0.5);
+    position: absolute;
+    top: 3.77%;
+    left: 0px;
+    height: 96.23%;
+    width: 100%;
+    z-index: 1;/**/
+    transition-duration: 1s;
+    -moz-transition-duration: 1s; /* Firefox 4 */
+    -webkit-transition-duration: 1s; /* Safari and Chrome */
+    -o-transition-duration: 1s; /* Opera */
+    transition-property: top;
+    -moz-transition-property: top; /* Firefox 4 */
+    -webkit-transition-property: top; /* Safari and Chrome */
+    -o-transition-property: top; /* Opera */
+}
+.char_class:hover .char_cover {
+    top: -93.25%;
+}
+.char_cover:before {
+    content: "";
+    box-shadow: 1px 1px 3px 1px rgba(100,100,100,0.5);
+    width: 100%;
+    height: 100%;
+}
+.char_cover img {
+    position: relative;
+    height: 34.425%;
+}
+.char_cover_text {
+    bottom: 28.5%;
+    font-family: "Frutiger LT 87 Extra Black";
+    font-size: 1.2em;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+}
+#char_interface {
+    position: absolute;
+    top: 0px;
+    left: 7.42%;
+    width: 27.73%;
+    height: 100%;
+}
+#char_interface .char_cover {
+	background: #d31477; /* Old browsers */
+	background: -moz-linear-gradient(top,  #d31477 0%, #be0f79 63%, #b0107c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d31477), color-stop(63%,#be0f79), color-stop(100%,#b0107c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #d31477 0%,#be0f79 63%,#b0107c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #d31477 0%,#be0f79 63%,#b0107c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #d31477 0%,#be0f79 63%,#b0107c 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #d31477 0%,#be0f79 63%,#b0107c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d31477', endColorstr='#b0107c',GradientType=0 ); /* IE6-9 */
+}
+
+#char_interface .char_cover img {
+    margin: 18% 0 0 38.1%;
+}
+#char_interface .char_cover_text {
+    left: 32%;
+    width: 35%;
+}
+#char_code {
+    position: absolute;
+    top: 0px;
+    left: 35.94%;
+    width: 42.58%;
+    height: 100%;
+}
+#char_code .char_cover {
+	background: #2189bb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2189bb 0%, #2784b7 18%, #237db2 35%, #2972aa 61%, #2772aa 64%, #3469a3 85%, #3563a0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2189bb), color-stop(18%,#2784b7), color-stop(35%,#237db2), color-stop(61%,#2972aa), color-stop(64%,#2772aa), color-stop(85%,#3469a3), color-stop(100%,#3563a0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2189bb 0%,#2784b7 18%,#237db2 35%,#2972aa 61%,#2772aa 64%,#3469a3 85%,#3563a0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2189bb 0%,#2784b7 18%,#237db2 35%,#2972aa 61%,#2772aa 64%,#3469a3 85%,#3563a0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2189bb 0%,#2784b7 18%,#237db2 35%,#2972aa 61%,#2772aa 64%,#3469a3 85%,#3563a0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2189bb 0%,#2784b7 18%,#237db2 35%,#2972aa 61%,#2772aa 64%,#3469a3 85%,#3563a0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2189bb', endColorstr='#3563a0',GradientType=0 ); /* IE6-9 */
+}
+
+#char_code .char_cover img {
+    left: 40%;
+    top: 20%;
+}
+#char_code .char_cover_text {
+    left: 37.5%;
+    width: 25%;
+}
+#char_market {
+    position: absolute;
+    top: 0px;
+    left: 79.3%;
+    width: 13.28%;
+    height: 100%;
+}
+#char_market .char_cover {
+	background: #7dac29; /* Old browsers */
+	background: -moz-linear-gradient(top,  #7dac29 0%, #69a931 31%, #4ea536 58%, #41a33a 75%, #28a03e 96%, #27a03e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7dac29), color-stop(31%,#69a931), color-stop(58%,#4ea536), color-stop(75%,#41a33a), color-stop(96%,#28a03e), color-stop(100%,#27a03e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7dac29 0%,#69a931 31%,#4ea536 58%,#41a33a 75%,#28a03e 96%,#27a03e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7dac29 0%,#69a931 31%,#4ea536 58%,#41a33a 75%,#28a03e 96%,#27a03e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7dac29 0%,#69a931 31%,#4ea536 58%,#41a33a 75%,#28a03e 96%,#27a03e 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7dac29 0%,#69a931 31%,#4ea536 58%,#41a33a 75%,#28a03e 96%,#27a03e 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7dac29', endColorstr='#27a03e',GradientType=0 ); /* IE6-9 */
+}
+#char_market .char_cover img {
+    left: 21%;
+    top: 21%;
+}
+#char_market .char_cover_text {
+    left: 11%;
+    width: 78%;
+}
+
+.char_block {
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+}
+.char_pic {
+    bottom: 3%;
+    height: 73%;
+    position: absolute;
+}
+.hello{
+	height: 20%;
+	position: absolute;
+	top: 7%;
+	left: 16%;
+/*display: none;/**/
+    opacity: 0;
+}
+#char_interface .char_block {
+    width: 50%;
+}
+#char_1 {
+    left: 1%;
+}
+#char_2 {
+    right: -3%;
+}
+#char_1 .char_pic {
+    right: 3%;
+}
+#char_2 .char_pic {
+    right: 16%
+}
+#char_code .char_block {
+    width: 33%;
+}
+#char_3 {
+    left: 1.5%;
+}
+#char_4 {
+    left: 35.5%;
+}
+#char_5 {
+    right: -2.5%;
+}
+#char_3 .char_pic {
+    height: 70.5%;
+    right: 18%;
+}
+#char_4 .char_pic {
+    right: 13%;
+    bottom: 4.5%;
+}
+#char_5 .char_pic {
+    right: 12%;
+}
+#char_market .char_block {
+    width: 100%;
+}
+#char_6 {
+    left: 5.5%;
+}
+#char_6 .char_pic {
+    bottom: 5.5%;
+    left: 53%;
+}
+
+.char_info {
+    bottom: 0;
+    color: black;
+    height: 112px;
+    left: 0;
+    padding: 0 2%;
+    position: absolute;
+    width: 135px;
+}
+/*.char_info div {
+ outline: 2px solid red;
+ }*/
+.char_name {
+    font-family: "futura oblique", "華康明W7";
+    font-size: 1.15em;
+    line-height: 1.3;
+}
+.char_name2 {
+    font-family: "futura oblique", "華康明W7";
+    font-size: 1em;
+    line-height: 1.3;
+    width: 100%;
+    white-space: nowrap;
+}
+.char_department {
+    font-family: "franklin gothic medium";
+    font-size: 0.975em;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+.char_icon {
+    height: 24%;
+    margin-top: 2%;
+    position: relative;
+    width: 45%;
+}
+.char_mail {
+    height: 100%;
+    left: 2%;
+    position: absolute;
+    top: 0;
+    width: 45%;
+}
+.char_fb {
+    height: 100%;
+    position: absolute;
+    right: 2.5%;
+    top: 0;
+    width: 45%;
+}
+.char_icon img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.char_icon .selected {
+    z-index: 1;
+    display: none;
+}
+.char_fb:hover img, .char_mail:hover img {
+    display: none;
+}
+.char_fb:hover .selected, .char_mail:hover .selected {
+    display: block;
+}
+
+/*icon開始*/
+#about_icon{
+	position:absolute;
+	left:39%;
+	top:-7%;
+	width:100%;
+}
+
+#about_page_icon img{
+	position:absolute;
+	width:12%;
+}
+
+#about_app_icon img{
+	position:absolute;
+	width:12%;
+	margin-left:15%;
+}
