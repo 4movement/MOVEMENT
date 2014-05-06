@@ -20,6 +20,7 @@
     <link rel = "stylesheet" href = "assets/css/menu.css">
     <link rel = "stylesheet" href = "assets/css/logo.css">
     <link rel = "stylesheet" href = "assets/css/about.css">
+    <link rel = "stylesheet" href = "assets/css/adipoli.css">
 </head>
 <body >
 
