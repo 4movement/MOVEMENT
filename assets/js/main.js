@@ -408,7 +408,7 @@ function load_page() {
     // movement.html needs to be first defined in controller,
     // then javascript can access.
     // larry 20140426 opened
-    $("#movement_layout").load("http://localhost:8888/movement/index.php/movement .wrapper", function() {
+    $("#movement_layout").load("index.php/movement .wrapper", function() {
         console.log("movement ini");
         initial_movement();
     });
@@ -417,7 +417,7 @@ function load_page() {
     var about_count = 3;
 
 
-    $("#about_layout").load("http://localhost:8888/movement/index.php/about .wrapper", function() {
+    $("#about_layout").load("index.php/about .wrapper", function() {
         about_count--;
         if (!about_count) {
             console.log("about_us ini");
