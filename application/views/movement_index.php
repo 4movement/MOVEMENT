@@ -19,6 +19,7 @@
     <link rel = "stylesheet" href = "assets/css/movement.css">
     <link rel = "stylesheet" href = "assets/css/menu.css">
     <link rel = "stylesheet" href = "assets/css/logo.css">
+    <link rel = "stylesheet" href = "assets/css/about.css">
 </head>
 <body >
 
