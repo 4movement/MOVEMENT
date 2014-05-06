@@ -45,8 +45,6 @@
             <div id="help_layout" class="layout">
                 
             </div>
-            <div id = "about_layout" class = "layout">
-            </div>
         </div>
     </div>
 
