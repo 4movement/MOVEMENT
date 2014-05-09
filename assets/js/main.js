@@ -466,16 +466,18 @@ function load_page() {
     var map_data = {};
     var map_path = {};
 
-    // larry 20140504 temp marked: need to add issue and guestboard pages 
-    // to controller 
-    /*
-    $("#issue_layout").load("issue.html .wrapper", function() {
+    
+    $("#issue_layout").load("index.php/issue .wrapper", function() {
         issue_count--;
         if (!issue_count) {
             console.log("issue ini");
             initial_issue(map_data, map_path);
         }
     });
+
+    // larry 20140504 temp marked: need to add issue and guestboard pages 
+    // to controller 
+    /*
     $("#photoWall_layout").load("guestboard.html .wrapper", function() {
         photoWall_count--;
         if (!photoWall_count) {
