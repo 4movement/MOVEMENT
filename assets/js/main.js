@@ -539,16 +539,15 @@ function load_page() {
 
     var help_count = 3;
 
-    // larry 20140504 temp marked: need to add help page to controller
-    /*
-    $("#help_layout").load("help.html .wrapper", function() {
+   
+    $("#help_layout").load("index.php/help .wrapper", function() {
         help_count--;
         if (help_count <= 0) {
             console.log("help ini")
             initial_help();
         }
     });
-*/
+
 
     $.getScript("assets/js/help.js", function() {
         help_count--;

@@ -24,6 +24,7 @@
     <link rel = "stylesheet" href = "assets/css/about.css">
     <link rel = "stylesheet" href = "assets/css/adipoli.css">
     <link rel = "stylesheet" href = "assets/css/issue.css">
+    <link rel = "stylesheet" href = "assets/css/help.css">
 </head>
 <body >
 
