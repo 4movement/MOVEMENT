@@ -28,11 +28,21 @@
         <script src="../../assets/js/jquery.rateit.min.js"></script>
 		-->
 
-        <script src="js/main.js"></script>  
-        <script src="../../assets/js/movement.js"></script>
+       <!-- <script src="../../assets/js/main.js"></script>  
+        <script src="../../assets/js/movement.js"></script>-->
         <script src="../../assets/js/menu.js"></script>
         <script src="../../assets/js/logo.js"></script>
-    </head>
+		<script src="../../assets/js/masonry-docs/masonry.pkgd.min.js"></script>
+		<script src="../../assets/js/scrollpagination.js"></script>   
+		<script>
+		$('#container').masonry({
+			columnWidth: 350,
+			itemSelector: '.item',
+			"gutter": 10,
+		});
+		</script>
+	</head>
+	
     <body>
         <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -41,30 +51,30 @@
 			<div class = "movement_display_mode">
 				<span class="tag_type">
 					<li class = "tag_type time">
-						<img src="assets/img/movement/button/mo-ti01.png" class="none_selected"  />
-						 <img src="assets/img/movement/button/mo-ti02.png" class="selected"/>
+						<img src="../../assets/img/movement/button/mo-ti01.png" class="none_selected"  />
+						 <img src="../../assets/img/movement/button/mo-ti02.png" class="selected"/>
 					</li>
 					<li class = "tag_type hot">
-						<img src="assets/img/movement/button/mo-ho01.png" class="none_selected"  />
-						<img src="assets/img/movement/button/mo-ho02.png" class="selected"/>
+						<img src="../../assets/img/movement/button/mo-ho01.png" class="none_selected"  />
+						<img src="../../assets/img/movement/button/mo-ho02.png" class="selected"/>
 					</li>
 					<li class = "tag_type new">
-						<img src="assets/img/movement/button/mo-ne01.png" class="none_selected"  />
-						<img src="assets/img/movement/button/mo-ne02.png" class="selected"/>
+						<img src="../../assets/img/movement/button/mo-ne01.png" class="none_selected"  />
+						<img src="../../assets/img/movement/button/mo-ne02.png" class="selected"/>
 					</li>
 					<li class = "tag_type issue">
-						<img src="assets/img/movement/button/mo-is01.png" class="none_selected"  />
-						<img src="assets/img/movement/button/mo-is02.png" class="selected"/>
+						<img src="../../assets/img/movement/button/mo-is01.png" class="none_selected"  />
+						<img src="../../assets/img/movement/button/mo-is02.png" class="selected"/>
 					</li>
 				</span><!--tag_type -->
 				<span class="display_type">
 					<li class="display_type picture">
-						<img src="assets/img/movement/button/mo-pi01.png" class="none_selected"  />
-						<img src="assets/img/movement/button/mo-pi02.png" class="selected" />
+						<img src="../../assets/img/movement/button/mo-pi01.png" class="none_selected"  />
+						<img src="../../assets/img/movement/button/mo-pi02.png" class="selected" />
 					</li>
 					<li class="display_type list">
-						<img src="assets/img/movement/button/mo-li01.png" class="none_selected"  />
-						<img src="assets/img/movement/button/mo-li02.png" class="selected" />
+						<img src="../../assets/img/movement/button/mo-li01.png" class="none_selected"  />
+						<img src="../../assets/img/movement/button/mo-li02.png" class="selected" />
 					</li>
 				</span><!--display_type -->
 			</div>
@@ -128,6 +138,16 @@
                    </li>
                 </ul>
              </div><!--calender-->
+			 <div id="movement_list"  class="masonry js-masonry"  data-masonry-options='{ "columnWidth": 350, "itemSelector": ".item","gutter": 20}'>       
+				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
+				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
+				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
+				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
+				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
+				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
+				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
+				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
+			</div><!--movement_list-->
 		</div><!-- movement_layout -->
     </body>
 </html>

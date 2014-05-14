@@ -1,6 +1,6 @@
 #movement_layout{
-	width:1280px;
-	height:800px;
+	width:1920px;
+	height:1080px;
 }
 
 /*tag bar*/
@@ -156,3 +156,22 @@
     width: 47.3%;
 }
 /*calendar*/
+
+/*list*/
+#movement_list{
+	width:1500px;
+	height:800px;
+	left:10%;
+	top:15%;
+}
+
+/*set the vertical length*/
+#movement_list .item {
+	margin-bottom:250px;
+}
+
+/* center container with CSS */
+#fit-width .masonry {
+	margin: 0 auto;
+}
+/*list*/
