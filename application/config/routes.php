@@ -38,12 +38,16 @@
 |
 */
 
+$route['movement'] = "movement";
+$route['about'] = "about";
+$route['issue'] = "issue";
+$route['help'] = "help";
+
 // larry 20140420
 //$route['default_controller'] = "welcome";
 $route['default_controller'] = "movement_index";
 $route['404_override'] = '';
-$route['movement'] = "movement";
-$route['about'] = "about";
+
 
 
 /* End of file routes.php */

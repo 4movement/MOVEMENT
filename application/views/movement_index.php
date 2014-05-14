@@ -16,14 +16,43 @@
     <link rel = "stylesheet" href = "assets/css/normalize.css">
     <link rel = "stylesheet" href = "assets/css/main.css">
     <link rel = "stylesheet" href = "assets/css/font.css">
+    <link rel = "stylesheet" href = "assets/css/about.css">
+    <link rel = "stylesheet" href = "assets/css/adipoli.css">
     <link rel = "stylesheet" href = "assets/css/movement.css">
     <link rel = "stylesheet" href = "assets/css/menu.css">
     <link rel = "stylesheet" href = "assets/css/logo.css">
+    <link rel = "stylesheet" href = "assets/css/about.css">
+    <link rel = "stylesheet" href = "assets/css/adipoli.css">
+    <link rel = "stylesheet" href = "assets/css/issue.css">
+    <link rel = "stylesheet" href = "assets/css/help.css">
 </head>
 <body >
+<<<<<<< .merge_file_RN3EVC
+=======
+
+    <!-- map to the master branch, 3rd major div -->
+>>>>>>> .merge_file_JGMw6C
     <div id = "layout_wrapper">
         <div id = "v_layout">
+            <div id = "about_layout" class = "layout">
+                
+            </div>
             <div id = "movement_layout" class = "layout">
+            
+            </div>
+            <div id = "h_layout" class="layout">
+                <div id="issue_layout" class="layout">
+                    
+                </div>
+                <div id = "photoWall_layout" class="layout">
+                    
+                </div>
+            </div>
+            <div id="discuss_layout" class="layout">
+                
+            </div>
+            <div id="help_layout" class="layout">
+                
             </div>
         </div>
     </div>

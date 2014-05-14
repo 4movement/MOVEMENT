@@ -408,7 +408,7 @@ function load_page() {
     // movement.html needs to be first defined in controller,
     // then javascript can access.
     // larry 20140426 opened
-    $("#movement_layout").load("http://localhost:8888/movement/index.php/movement .wrapper", function() {
+    $("#movement_layout").load("index.php/movement .wrapper", function() {
         console.log("movement ini");
         initial_movement();
     });
@@ -417,7 +417,7 @@ function load_page() {
     var about_count = 3;
 
 
-    $("#about_layout").load("http://localhost:8888/movement/index.php/about .wrapper", function() {
+    $("#about_layout").load("index.php/about .wrapper", function() {
         about_count--;
         if (!about_count) {
             console.log("about_us ini");
@@ -465,13 +465,19 @@ function load_page() {
     var photoWall_count = 4;
     var map_data = {};
     var map_path = {};
-    $("#issue_layout").load("issue.html .wrapper", function() {
+
+    
+    $("#issue_layout").load("index.php/issue .wrapper", function() {
         issue_count--;
         if (!issue_count) {
             console.log("issue ini");
             initial_issue(map_data, map_path);
         }
     });
+
+    // larry 20140504 temp marked: need to add issue and guestboard pages 
+    // to controller 
+    /*
     $("#photoWall_layout").load("guestboard.html .wrapper", function() {
         photoWall_count--;
         if (!photoWall_count) {
@@ -479,6 +485,7 @@ function load_page() {
             initial_photoWall();
         }
     });
+*/
 
     $.getScript("assets/js/issue.js", function() {
         issue_count--;
@@ -531,13 +538,16 @@ function load_page() {
     });
 
     var help_count = 3;
-    $("#help_layout").load("help.html .wrapper", function() {
+
+   
+    $("#help_layout").load("index.php/help .wrapper", function() {
         help_count--;
         if (help_count <= 0) {
             console.log("help ini")
             initial_help();
         }
     });
+
 
     $.getScript("assets/js/help.js", function() {
         help_count--;
