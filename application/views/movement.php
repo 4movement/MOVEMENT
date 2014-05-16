@@ -28,8 +28,8 @@
         <script src="../../assets/js/jquery.rateit.min.js"></script>
 		-->
 
-       <!-- <script src="../../assets/js/main.js"></script>  
-        <script src="../../assets/js/movement.js"></script>-->
+        <script src="../../assets/js/main.js"></script>  
+        <script src="../../assets/js/movement.js"></script>
         <script src="../../assets/js/menu.js"></script>
         <script src="../../assets/js/logo.js"></script>
 		<script src="../../assets/js/masonry-docs/masonry.pkgd.min.js"></script>
@@ -139,14 +139,41 @@
                 </ul>
              </div><!--calender-->
 			 <div id="movement_list"  class="masonry js-masonry"  data-masonry-options='{ "columnWidth": 350, "itemSelector": ".item","gutter": 20}'>       
-				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
-				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
-				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
-				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
-				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
-				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
-				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
-				<li class="item"><img src="../../assets/img/sample.jpg" /></li>
+				<li class="item">
+					<div id="movement_list_data">
+						<div class= "mask"></div>
+						<img class="photo" src="../../assets/img/sample.jpg" />
+						<div class="list_title_nav">
+							<div class="list_title">Media Monoploy</div>
+							<div class="list_nav">
+								<span class="list_date">2/14</span>
+								<span class="list_place"><img src="../../assets/img/movement/button/mo-lo.png" />Taipei</span>
+								<span class="list_category"><img src="" /></span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<img src="../../assets/img/sample.jpg" />
+				</li>
+				<li class="item">
+					<img src="../../assets/img/sample.jpg" />
+				</li>
+				<li class="item">
+					<img src="../../assets/img/sample.jpg" />
+				</li>
+				<li class="item">
+					<img src="../../assets/img/sample.jpg" />
+				</li>
+				<li class="item">
+					<img src="../../assets/img/sample.jpg" />
+				</li>
+				<li class="item">
+					<img src="../../assets/img/sample.jpg" />
+				</li>
+				<li class="item">
+					<img src="../../assets/img/sample.jpg" />
+				</li>
 			</div><!--movement_list-->
 		</div><!-- movement_layout -->
     </body>

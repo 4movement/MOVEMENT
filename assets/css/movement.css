@@ -3,7 +3,8 @@
 	height:1080px;
 }
 
-/*tag bar*/
+/*--tag bar
+-----------------------*/
 .movement_display_mode {
 	position:fixed;
 	width:80%;
@@ -44,7 +45,9 @@
 }
 /*tag bar*/
 
-/*calendar*/
+
+/*--calendar
+-----------------------*/
 #movement_calender {
     background: transparent;
 	top:8%;
@@ -157,12 +160,42 @@
 }
 /*calendar*/
 
-/*list*/
+/*--list
+-----------------------*/
 #movement_list{
 	width:1500px;
 	height:800px;
 	left:10%;
 	top:15%;
+}
+
+.item{
+	list-style:none;
+	display:block;
+}
+
+.list_nav{
+	height:30px;
+	background-color:black;
+}
+
+.list_nav img{
+	width:4%;
+}
+
+.list_title_nav{
+	color:white;
+	display:block;
+	margin-top:-51px;
+	margin-left:15px;
+}
+
+.mask {
+    display: block;
+    /*display: none;/**/
+    z-index: 1;
+	height:233px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /*set the vertical length*/
