@@ -142,15 +142,19 @@
 				<li class="item">
 					<div id="movement_list_data">
 						<div class= "mask"></div>
-						<img class="photo" src="../../assets/img/sample.jpg" />
-						<div class="list_title_nav">
-							<div class="list_title">Media Monoploy</div>
-							<div class="list_nav">
-								<span class="list_date">2/14</span>
-								<span class="list_place"><img src="../../assets/img/movement/button/mo-lo.png" />Taipei</span>
-								<span class="list_category"><img src="" /></span>
+						<img class="photo" src="../../assets/img/sample.jpg">
+							<div class="list_title_nav">
+								<div class="list_title">Media Monoploy</div>
+								<div class="list_nav">
+									<span class="list_date">2/14</span>
+									<span class="list_place">
+										<img src="../../assets/img/movement/button/mo-lo.png" />
+										<span>Taipei<span>
+									</span>
+									<span class="list_category"><img src="" /></span>
+								</div>
 							</div>
-						</div>
+						</img>
 					</div>
 				</li>
 				<li class="item">
