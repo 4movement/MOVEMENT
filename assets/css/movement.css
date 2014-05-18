@@ -1,7 +1,16 @@
+/*--Global
+-----------------------*/
 #movement_layout{
 	width:1920px;
 	height:1080px;
 }
+
+@font-face{
+	font-family: "ge",
+	src: url(assets/css/font/georgia.ttf);
+}
+
+/*Global*/
 
 /*--tag bar
 -----------------------*/
@@ -10,7 +19,7 @@
 	width:80%;
 	height:120px;
 	left:192px;
-	border-bottom:#B5B5B5 2px solid;
+	border-bottom:#B4B4B4 2px solid;
 	display:inline-block;
 }
 
@@ -23,17 +32,13 @@
 	height:47px;
 }
 
-.tag_type {
-	position:relative;
-}
-
 .display_type {
 	position:relative;
 	left:100px;
 }
 
 .tag_type li {
-	width:6%;
+	width:7%;
 }
 
 .tag_type img, .display_type img{
@@ -209,6 +214,7 @@ li.item{
 
 .list_date{
 	font-size:20pt;
+	font-family:"ge";
 }
 
 .list_place img{
