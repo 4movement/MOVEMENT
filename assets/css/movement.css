@@ -163,6 +163,8 @@
 /*--list
 -----------------------*/
 #movement_list{
+	position:absolute;
+	display:block;
 	width:1500px;
 	height:800px;
 	left:10%;
@@ -171,6 +173,9 @@
 
 li.item{
 	list-style:none;
+	width:350px;
+	margin:10px;
+	float:left;
 }
 
 .item.photo{
@@ -224,18 +229,10 @@ li.item{
     display: block;
     /*display: none;*/
     z-index: 1;
+	margin:10px 0 0 10px;
 	width:350px;
 	height:233px;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/*set the vertical length*/
-#movement_list .item {
-	margin-bottom:250px;
-}
-
-/* center container with CSS */
-#fit-width .masonry {
-	margin: 0 auto;
-}
 /*list*/

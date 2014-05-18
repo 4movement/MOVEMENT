@@ -25,6 +25,31 @@
     <link rel = "stylesheet" href = "assets/css/adipoli.css">
     <link rel = "stylesheet" href = "assets/css/issue.css">
     <link rel = "stylesheet" href = "assets/css/help.css">
+	
+	<script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://yui.yahooapis.com/2.9.0/build/yuiloader/yuiloader-min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/jquery.transit.min.js"></script>
+	<script src="assets/js/jquery.mousewheel.js"></script>
+	<script src="assets/js/masonry-docs/masonry.pkgd.min.js"></script>
+	<script src="assets/js/scrollpagination.js"></script>   
+	
+	<script src="assets/js/about.js"></script>
+    <script src="assets/js/movement.js"></script>
+    <script src="assets/js/logo.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/main.js"></script>
+	
+	<script> //Masonry
+		$('#container').masonry({
+			columnWidth: 350,
+			itemSelector: '.item',
+			isFitWidth: true,
+			
+		});
+	</script>
 </head>
 <body >
 
@@ -224,23 +249,11 @@
     </ul> <!--ul id = "menu"-->
 	
     <footer>
-		<p>Copyright(c)2013 NCKU,Movement. All Rights Reserved.</p>
+		<p>Copyright(c)2014 NCKU,Movement. All Rights Reserved.</p>
     </footer>
         
     <!--<img src = "img/login/lo-in04.jpg" class "design_template"/>-->
-    <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://yui.yahooapis.com/2.9.0/build/yuiloader/yuiloader-min.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/jquery.transit.min.js"></script>
-	<script src="assets/js/jquery.mousewheel.js"></script>
 
-    <script src="assets/js/about.js"></script>
-    <script src="assets/js/movement.js"></script>
-    <script src="assets/js/logo.js"></script>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/main.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-40403508-1']);
