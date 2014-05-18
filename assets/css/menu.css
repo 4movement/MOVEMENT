@@ -39,11 +39,6 @@
     padding: 0px 0px 0px 5%;
     margin-right: 3%;
 }
-.menu:last-child {
-    margin-right: 0;
-    width: 18.5%;
-    padding-left: 40%;
-}
 
 #menu:hover .selected {
     background-color: transparent;
@@ -52,7 +47,7 @@
     color: #0098de;
 }
 
-#menu li:last-child .menu_r {
+#menu li:first-child .menu_r {
     display: none;
 }
 
@@ -86,8 +81,8 @@
 }
 
 #menu_login .menu_icon {
-	left:62%;
-    width: 20%;
+	left:0%;
+    width: 140%;
 }
 
 #menu_login.menu:hover .menu_icon, #menu_login.selected .menu_icon {

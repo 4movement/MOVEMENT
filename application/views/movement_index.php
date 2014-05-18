@@ -139,6 +139,51 @@
     </div> <!--div id = "logo_wrapper"-->
 
     <ul id = "menu">
+		<li id = "menu_login" class = "menu" current_page = "menu_movement">
+            <div class ="menu_l">
+                
+            </div>
+                
+            <div class = "text">
+            sign in.
+            </div>
+                
+            <div class = "menu_icon2">
+                
+            </div>
+                
+            <div class = "menu_icon">
+                <img src="assets/img/menu/login-ba-sh.png"/>
+                <form>
+                    <div class="member_photo">
+                        <img src="assets/img/user_images/thumb/default.png" class="member_photo" id="user_photo"/>
+                        <p class="member_photo">
+                            <p class="user_name">
+                            Demo
+                            </p>
+                        </p>
+                    </div>  <!--div class="member_photo"-->
+                    <input type="text"  placeholder="ID NUMBER" class = "id"/>
+                    <input type="password"  placeholder="PASSWORD" class = "password"/>
+                    <button type="button" class = "login">
+                    Sign in
+                    </button>
+                    <button type="button" class = "register">
+                    Register
+                    </button>
+                    <div class = "other_account">
+                        <h2>Sign in with :</h2>
+                        <button type="button" class = "facebook"><img src = "assets/img/menu/fb-lo.png" />
+                        </button>
+                        <button type="button" class = "twitter"><img src = "assets/img/menu/tw-lo.png" />
+                        </button>
+                        <button type="button" class = "google_plus"><img src = "assets/img/menu/go-lo.png" />
+                        </button>
+                    </div> <!--div class = "other_account"-->
+                </form>
+            </div> <!--div class = "menu_icon"-->
+        </li>
+        <!--li id = "menu_login" class = "menu" current_page = "menu_movement"-->
         <li id = "menu_aboutus" class = "menu" onClick="_gaq.push(['_trackEvent', 'about', 'click']);" >
             <div class ="menu_l">
                 
@@ -200,52 +245,6 @@
             </div>
 
         </li>
-            
-        <li id = "menu_login" class = "menu" current_page = "menu_movement">
-            <div class ="menu_l">
-                
-            </div>
-                
-            <div class = "text">
-            sign in.
-            </div>
-                
-            <div class = "menu_icon2">
-                
-            </div>
-                
-            <div class = "menu_icon">
-                <img src="assets/img/menu/login-ba-sh.png"/>
-                <form>
-                    <div class="member_photo">
-                        <img src="assets/img/user_images/thumb/default.png" class="member_photo" id="user_photo"/>
-                        <p class="member_photo">
-                            <p class="user_name">
-                            Demo
-                            </p>
-                        </p>
-                    </div>  <!--div class="member_photo"-->
-                    <input type="text"  placeholder="ID NUMBER" class = "id"/>
-                    <input type="password"  placeholder="PASSWORD" class = "password"/>
-                    <button type="button" class = "login">
-                    Sign in
-                    </button>
-                    <button type="button" class = "register">
-                    Register
-                    </button>
-                    <div class = "other_account">
-                        <h2>Sign in with :</h2>
-                        <button type="button" class = "facebook"><img src = "assets/img/menu/fb-lo.png" />
-                        </button>
-                        <button type="button" class = "twitter"><img src = "assets/img/menu/tw-lo.png" />
-                        </button>
-                        <button type="button" class = "google_plus"><img src = "assets/img/menu/go-lo.png" />
-                        </button>
-                    </div> <!--div class = "other_account"-->
-                </form>
-            </div> <!--div class = "menu_icon"-->
-        </li>
-        <!--li id = "menu_login" class = "menu" current_page = "menu_movement"-->
     </ul> <!--ul id = "menu"-->
 	
     <footer>
