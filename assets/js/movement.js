@@ -796,9 +796,6 @@ function set_gallery_size() {
         "width" : 200 * ratio + 'px',
         "height" : 40 * ratio + 'px'
     });
-    $(".movement_display_mode").css({
-        "border-width" : '0 0 0 ' + 2 * ratio + 'px'
-    });
     $("#movement_tag_wrapper:not(.hover)").css({
         "width" : 200 * ratio + 'px',
         "top" : -4 * ratio + 'px',

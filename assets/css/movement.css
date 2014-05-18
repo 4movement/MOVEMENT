@@ -10,17 +10,16 @@
 	src: url(assets/css/font/georgia.ttf);
 }
 
-/*Global*/
-
 /*--tag bar
 -----------------------*/
 .movement_display_mode {
-	position:fixed;
+	position:absolute;
 	width:80%;
 	height:120px;
 	left:192px;
-	border-bottom:#B4B4B4 2px solid;
-	display:inline-block;
+	list-style:none;
+	border-bottom:#B4B4B4 4px solid;
+	display:block;
 }
 
 .movement_display_mode li{
@@ -34,7 +33,7 @@
 
 .display_type {
 	position:relative;
-	left:100px;
+	left:80px;
 }
 
 .tag_type li {
@@ -163,7 +162,6 @@
     top: -110%;
     width: 47.3%;
 }
-/*calendar*/
 
 /*--list
 -----------------------*/
@@ -174,6 +172,7 @@
 	height:800px;
 	left:10%;
 	top:15%;
+	display: none;
 }
 
 li.item{
@@ -241,4 +240,39 @@ li.item{
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/*list*/
+/*--list detail
+-----------------------*/
+#movement_list_detail{
+	position:absolute;
+	display:black;
+	width:600px;
+	height:500px;
+	left:250px;
+	top:20%;
+	list-style:none;
+	background-color:black;
+}
+
+.detail_mask {
+	position:absolute;
+    display: block;
+    display: none;
+    z-index: 1;
+	width:600px;
+	height:500px;
+    background-color: rgba(0, 0, 0, 0.8);
+	left:250px;
+	top:20%;
+}
+
+#detail_button_wrapper{
+	z-index:2;
+	position:absolute;
+	display:block;
+	width:160px;
+	height:470px;
+}
+
+#detail_button_wrapper li{
+	left:20px;
+}

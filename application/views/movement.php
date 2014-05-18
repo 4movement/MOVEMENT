@@ -182,6 +182,22 @@
 						<img src="assets/img/sample.jpg" />
 					</li>
 				</div><!--movement_list-->
+				<div class="detail_mask"></div>
+				<div id="movement_list_detail">
+					<div id="detail_button_wrapper">
+						<li>
+							<img src="assets/img/movement/mo-jo01.png" />
+						</li>
+						<li>
+							<img src="assets/img/movement/mo-sh01.png" />
+						</li>
+						<li>
+							<img src="assets/img/movement/mo-do01.png" />
+						</li>
+					</div><!--detail_button_wrapper-->
+					<div id="detail_data_wrapper">
+					</div><!--detail_data_wrapper-->
+				</div><!--movement_list_detail-->
 			</div><!--movement wrapper-->
 		</div><!-- movement_layout -->
     </body>
