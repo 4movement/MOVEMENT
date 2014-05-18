@@ -32,7 +32,7 @@
         <script src="assets/js/movement.js"></script>
         <script src="assets/js/menu.js"></script>
         <script src="assets/js/logo.js"></script>
-		<script src="assets/js/masonry-docs/masonry.pkgd.min.js"></script>
+		<script src="assets/js/masonry.pkgd.min.js"></script>
 		<script src="assets/js/scrollpagination.js"></script>   
 		<script>
 		$(function(){

@@ -33,7 +33,7 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/jquery.transit.min.js"></script>
 	<script src="assets/js/jquery.mousewheel.js"></script>
-	<script src="assets/js/masonry-docs/masonry.pkgd.min.js"></script>
+	<script src="assets/js/masonry.pkgd.min.js"></script>
 	<script src="assets/js/scrollpagination.js"></script>   
 	
 	<script src="assets/js/about.js"></script>
