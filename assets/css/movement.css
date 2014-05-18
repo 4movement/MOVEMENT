@@ -5,9 +5,24 @@
 	height:1080px;
 }
 
-@font-face{
-	font-family: "ge",
-	src: url(assets/css/font/georgia.ttf);
+.nav_date{
+	font-size:20pt;
+	font-family:"georgia";
+}
+
+.nav_place img{
+	width:15%;
+}
+
+.nav_place{
+	position:absolute;
+	font-family:"franklin gothic demi";
+	font-size:14pt;
+	height:35px;
+}
+
+.nav_place span{
+	margin-left:2px;
 }
 
 /*--tag bar
@@ -172,7 +187,6 @@
 	height:800px;
 	left:10%;
 	top:15%;
-	display: none;
 }
 
 li.item{
@@ -187,7 +201,7 @@ li.item{
 	position:absolute;
 }
 
-.list_title_nav{
+.list_nav_wrapper{
 	color:white;
 	margin-top:-78px;
 	z-index:1;
@@ -208,26 +222,8 @@ li.item{
 
 .list_title{
 	font-size:24pt;
+	font-family:"franklin gothic demi";
 	margin-left:10px;
-}
-
-.list_date{
-	font-size:20pt;
-	font-family:"ge";
-}
-
-.list_place img{
-	width:15%;
-}
-
-.list_place{
-	position:absolute;
-	font-size:14pt;
-	height:35px;
-}
-
-.list_place span{
-	margin-left:2px;
 }
 
 .mask {
@@ -250,7 +246,8 @@ li.item{
 	left:250px;
 	top:20%;
 	list-style:none;
-	background-color:black;
+	background-color:rgba(0, 0, 0, 0.8);
+	z-index:2;
 }
 
 .detail_mask {
@@ -265,14 +262,72 @@ li.item{
 	top:20%;
 }
 
+.detail_count{
+	position:absolute;
+	font-size:27pt;
+	font-family:"georgia";
+	text-align:right;
+}
+
 #detail_button_wrapper{
 	z-index:2;
 	position:absolute;
 	display:block;
 	width:160px;
 	height:470px;
+	position:absolute;
+}
+
+#detail_button_border{
+	position:absolute;
+	border-right:#B4B4B4 4px solid;
+	width:160px;
+	height:430px;
+	margin-top:20px;
 }
 
 #detail_button_wrapper li{
-	left:20px;
+	margin-left:20px;
+	margin-top:30px;
+}
+
+#detail_button_wrapper li img{
+	width:28%;
+}
+
+#detail_data_wrapper{
+	z-index:2;
+	position:absolute;
+	display:block;
+	width:380px;
+	height:470px;
+	position:absolute;
+	left:200px;
+	top:20px;
+}
+
+#detail_data_wrapper li{
+	font-size:12pt;
+	margin-top:10px;
+}
+
+.detail_data_head{
+	font-size:16pt;
+	font-family:"franklin gothic demi";
+}
+
+.detail_nav_wrapper{
+	position:absolute;
+	top:423px;
+}
+
+.detail_nav{
+	position:absolute;
+	background-color:#1E1E1E;
+	width:600px;
+	height:30px;
+}
+
+.detail_nav .nav_date{
+	margin-left:10px;
 }
