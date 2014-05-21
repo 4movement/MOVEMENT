@@ -331,3 +331,36 @@ li.item{
 .detail_nav .nav_date{
 	margin-left:10px;
 }
+
+#detail_close{
+	width:5%;
+	margin-top:10px;
+	margin-left:560px;
+}
+
+.op_issue_data_wrapper{
+	display:block;
+	width:30px;
+	height:500px;
+	background-color:#1E1E1E;
+	position:absolute;
+	margin-top:-23px;
+	margin-left:600px;
+}
+
+.op_issue_data_wrapper img{
+	position:absolute;
+	width:15px;
+	margin-top:225px;
+	margin-left:8px;
+}
+
+.issue_data_wrapper{
+	position:absolute;
+	width:300px;
+	height:500px;
+	background-color:#1E1E1E;
+	margin-left:630px;
+	margin-top:-23px;
+	display:none;
+}

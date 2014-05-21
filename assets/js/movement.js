@@ -1000,3 +1000,13 @@ function movement_hash_decode() {
     }
 }
 
+
+/** open issue data
+--------------------------**/
+$(document).ready(function(){
+  $(".op_issue_data_wrapper").click(function(){
+    $(".issue_data_wrapper").toggle();
+  });
+});
+
+console.log("abc")

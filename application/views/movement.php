@@ -17,8 +17,7 @@
         <link rel = "stylesheet" href = "assets/css/movement.css">
         <link rel = "stylesheet" href = "assets/css/menu.css">
         <link rel = "stylesheet" href = "assets/css/logo.css">
-
-        <!-- 
+       
 		<script src="../../assets/js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
@@ -26,7 +25,6 @@
         <script src="../../assets/js/jquery.transit.min.js"></script>
         <script src="../../assets/js/jquery.mousewheel.js"></script>
         <script src="../../assets/js/jquery.rateit.min.js"></script>
-		-->
 
         <script src="assets/js/main.js"></script>  
         <script src="assets/js/movement.js"></script>
@@ -233,8 +231,17 @@
 							</span>
 							<span class="nav_category"><img src="" /></span>
 						</div>
-					</div>
-					</div>
+					</div><!--detail_nav_wrapper-->
+					<img id="detail_close" src="assets/img/movement/mo-xx01.png" />
+					<div class="op_issue_data_wrapper">
+						<img src="assets/img/movement/mo-ar.png">
+					</div><!--op_issue_data_wrapper-->
+					<div class="issue_data_wrapper">
+						<div>Reccomend</div>
+						<li></li>
+						<li></li>
+						<li></li>
+					</div><!--issue_data_wrapper-->
 				</div><!--movement_list_detail-->
 			</div><!--movement wrapper-->
 		</div><!-- movement_layout -->
