@@ -42,6 +42,8 @@ $route['movement'] = "movement";
 $route['about'] = "about";
 $route['issue'] = "issue";
 $route['help'] = "help";
+$route['testdb'] = "testdb";
+$route['detail'] = "detail";
 
 // larry 20140420
 //$route['default_controller'] = "welcome";
