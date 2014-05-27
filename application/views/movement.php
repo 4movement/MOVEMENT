@@ -181,10 +181,7 @@
 					</li>
 				</div><!--movement_list-->
 				<div class="detail_mask"></div>
-				<!-- movement_list detail -->
-				<?php
-					$this->load->view('detail');
-				?>
+<?php $this->load->view('detail'); ?>
 			</div><!--movement wrapper-->
 		</div><!-- movement_layout -->
     </body>
