@@ -181,68 +181,7 @@
 					</li>
 				</div><!--movement_list-->
 				<div class="detail_mask"></div>
-				<div id="movement_list_detail">
-					<div id="detail_button_wrapper">
-						<div id="detail_button_border">
-						</div>
-						<li>
-							<img src="assets/img/movement/mo-jo01.png" />
-							<span class="detail_count join_count">3,002</span>
-						</li>
-						<li>
-							<img src="assets/img/movement/mo-sh01.png" />
-							<span class="detail_count support_count">91,002</span>		
-						</li>
-						<li>
-							<img src="assets/img/movement/mo-do01.png" />
-							<span class="detail_count donate_count">300</span>		
-						</li>
-					</div><!--detail_button_wrapper-->
-					<div id="detail_data_wrapper">
-						<li class="detail_intro">
-							<div class="detail_data_head">Introduction</div>
-						本行動由環保、社運、文化與社福各界公民團體共同發起，我們期待展現公民而起的政治力量，要求一個符合環境永續的政策。
-						</li>
-						<li class="detail_demand">
-							<div class="detail_data_head">Demand</div>
-						1.退回服貿
-						2.立法
-						</li>
-						<li class="detail_time">
-							<div class="detail_data_head">Time</div>
-						2014/2/14 14:00~
-						</li>
-						<li class="detail_link">
-							<div class="detail_data_head">Link</div>
-						<a href="http://movement.com">http://movement.com</a>
-						</li>
-						<li class="detail_organizer">
-							<div class="detail_data_head">Organizer</div>
-						綠色公民行動聯盟
-						</li>
-					</div><!--detail_data_wrapper-->
-					<div class="detail_nav_wrapper">
-						<div class="list_title">Media Monoploy</div>
-						<div class="detail_nav">
-							<span class="nav_date">2/14</span>
-							<span class="nav_place">
-								<img src="assets/img/movement/mo-lo.png" />
-								<span>Taipei</span>
-							</span>
-							<span class="nav_category"><img src="" /></span>
-						</div>
-					</div><!--detail_nav_wrapper-->
-					<img id="detail_close" src="assets/img/movement/mo-xx01.png" />
-					<div class="op_issue_data_wrapper">
-						<img src="assets/img/movement/mo-ar.png">
-					</div><!--op_issue_data_wrapper-->
-					<div class="issue_data_wrapper">
-						<div>Reccomend</div>
-						<li></li>
-						<li></li>
-						<li></li>
-					</div><!--issue_data_wrapper-->
-				</div><!--movement_list_detail-->
+<?php $this->load->view('detail'); ?>
 			</div><!--movement wrapper-->
 		</div><!-- movement_layout -->
     </body>
