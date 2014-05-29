@@ -1001,12 +1001,13 @@ function movement_hash_decode() {
 }
 
 
-/** open issue data
---------------------------**/
 $(document).ready(function(){
-  $(".op_issue_data_wrapper").click(function(){
-    $(".issue_data_wrapper").toggle();
-  });
+	// open or close issue data
+	$(".op_issue_data_wrapper").click(function(){
+		$(".issue_data_wrapper").toggle();
+	});
+	// close detail
+	$("#detail_close").click(function(){
+		$("#movement_list_detail").toggle();
+	});
 });
-
-console.log("abc")
