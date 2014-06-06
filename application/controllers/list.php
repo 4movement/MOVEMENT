@@ -1,8 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Issue extends CI_Controller {
+class Movement extends CI_Controller {
 	public function index()
 	{
-		$this->load->view('issue');
+		$this->load->view('list');
 	}
 }

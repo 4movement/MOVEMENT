@@ -11,35 +11,33 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="shortcut icon" href="assets/img/favicon.jpg">
+    <link rel="shortcut icon" href="<? echo base_url("assets/img/favicon.jpg"); ?>">
 
-    <link rel = "stylesheet" href = "assets/css/normalize.css">
-    <link rel = "stylesheet" href = "assets/css/main.css">
-    <link rel = "stylesheet" href = "assets/css/font.css">
-    <link rel = "stylesheet" href = "assets/css/about.css">
-    <link rel = "stylesheet" href = "assets/css/adipoli.css">
-    <link rel = "stylesheet" href = "assets/css/movement.css">
-    <link rel = "stylesheet" href = "assets/css/menu.css">
-    <link rel = "stylesheet" href = "assets/css/logo.css">
-    <link rel = "stylesheet" href = "assets/css/about.css">
-    <link rel = "stylesheet" href = "assets/css/adipoli.css">
-    <link rel = "stylesheet" href = "assets/css/issue.css">
-    <link rel = "stylesheet" href = "assets/css/help.css">
+    <link rel = "stylesheet" href = "<? echo base_url("assets/css/normalize.css"); ?>">
+    <link rel = "stylesheet" href = "<? echo base_url("assets/css/main.css"); ?>">
+    <link rel = "stylesheet" href = "<? echo base_url("assets/css/font.css"); ?>">
+    <link rel = "stylesheet" href = "<? echo base_url("assets/css/movement.css"); ?>">
+    <link rel = "stylesheet" href = "<? echo base_url("assets/css/menu.css"); ?>">
+    <link rel = "stylesheet" href = "<? echo base_url("assets/css/logo.css"); ?>">
+    <link rel = "stylesheet" href = "<? echo base_url("assets/css/about.css"); ?>">
+    <link rel = "stylesheet" href = "<? echo base_url("assets/css/adipoli.css"); ?>">
+    <link rel = "stylesheet" href = "<? echo base_url("assets/css/issue.css"); ?>">
+    <link rel = "stylesheet" href = "<? echo base_url("assets/css/help.css"); ?>">
 	
-	<script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+	<script src="<? echo base_url("assets/js/vendor/modernizr-2.6.2.min.js"); ?>"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://yui.yahooapis.com/2.9.0/build/yuiloader/yuiloader-min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/jquery.transit.min.js"></script>
-	<script src="assets/js/jquery.mousewheel.js"></script>
-	<script src="assets/js/masonry.pkgd.min.js"></script>
-	<script src="assets/js/scrollpagination.js"></script>   
+    <script src="<? echo base_url("assets/js/plugins.js"); ?>"></script>
+    <script src="<? echo base_url("assets/js/jquery.transit.min.js"); ?>"></script>
+	<script src="<? echo base_url("assets/js/jquery.mousewheel.js"); ?>"></script>
+	<script src="<? echo base_url("assets/js/masonry.pkgd.min.js"); ?>"></script>
+	<script src="<? echo base_url("assets/js/scrollpagination.js"); ?>"></script>   
 	
-	<script src="assets/js/about.js"></script>
-    <script src="assets/js/logo.js"></script>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/main.js"></script>
+	<script src="<? echo base_url("assets/js/about.js"); ?>"></script>
+    <script src="<? echo base_url("assets/js/logo.js"); ?>"></script>
+    <script src="<? echo base_url("assets/js/menu.js"); ?>"></script>
+    <script src="<? echo base_url("assets/js/main.js"); ?>"></script>
 	
 	<script> //Masonry
 		$('#container').masonry({
@@ -152,10 +150,10 @@
             </div>
                 
             <div class = "menu_icon">
-                <img src="assets/img/menu/login-ba-sh.png"/>
+                <img src="<? echo base_url("assets/img/menu/login-ba-sh.png"); ?>"/>
                 <form>
                     <div class="member_photo">
-                        <img src="assets/img/user_images/thumb/default.png" class="member_photo" id="user_photo"/>
+                        <img src="<? echo base_url("assets/img/user_images/thumb/default.png");?> class="member_photo" id="user_photo"/>
                         <p class="member_photo">
                             <p class="user_name">
                             Demo
@@ -172,11 +170,11 @@
                     </button>
                     <div class = "other_account">
                         <h2>Sign in with :</h2>
-                        <button type="button" class = "facebook"><img src = "assets/img/menu/fb-lo.png" />
+                        <button type="button" class = "facebook"><img src = "<? echo base_url("assets/img/menu/fb-lo.png"); ?>" />
                         </button>
-                        <button type="button" class = "twitter"><img src = "assets/img/menu/tw-lo.png" />
+                        <button type="button" class = "twitter"><img src = "<? echo base_url("assets/img/menu/tw-lo.png"); ?>" />
                         </button>
-                        <button type="button" class = "google_plus"><img src = "assets/img/menu/go-lo.png" />
+                        <button type="button" class = "google_plus"><img src = "<? echo base_url("assets/img/menu/go-lo.png"); ?>" />
                         </button>
                     </div> <!--div class = "other_account"-->
                 </form>
@@ -193,7 +191,7 @@
             </div>
                 
             <div class = "menu_icon">
-                <img src="assets/img/menu/about-icon.png"/>
+                <img src="<? echo base_url("assets/img/menu/about-icon.png"); ?>"/>
             </div>
          
         </li>
@@ -208,7 +206,7 @@
             </div>
                 
             <div class = "menu_icon">
-                <img src="assets/img/menu/moveicon.png" />
+                <img src="<? echo base_url("assets/img/menu/moveicon.png"); ?>" />
             </div>
                 
 
@@ -224,7 +222,7 @@
             </div>
                 
             <div class = "menu_icon">
-                <img src="assets/img/menu/issue-icon.png"/>
+                <img src="<? echo base_url("assets/img/menu/issue-icon.png"); ?>"/>
             </div>
                
         </li>
@@ -240,7 +238,7 @@
             </div>
                 
             <div class = "menu_icon">
-                <img src="assets/img/menu/helpicon.png"/>
+                <img src="<? echo base_url("assets/img/menu/helpicon.png"); ?>"/>
             </div>
 
         </li>
