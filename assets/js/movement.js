@@ -491,7 +491,7 @@ function initial_movement() {
 
         var movementID = $obj.attr("movement_id");
 
-        var url = "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/codeigniter/index.php/api/joinmovement";
+        var url = "http://movement.ee.ncku.edu.tw/codeigniter/index.php/api/joinmovement";
         $.post(url, {
             "movementID" : movementID
         }, function(response) {
