@@ -16,8 +16,6 @@
     <link rel = "stylesheet" href = "assets/css/normalize.css">
     <link rel = "stylesheet" href = "assets/css/main.css">
     <link rel = "stylesheet" href = "assets/css/font.css">
-    <link rel = "stylesheet" href = "assets/css/about.css">
-    <link rel = "stylesheet" href = "assets/css/adipoli.css">
     <link rel = "stylesheet" href = "assets/css/movement.css">
     <link rel = "stylesheet" href = "assets/css/menu.css">
     <link rel = "stylesheet" href = "assets/css/logo.css">
@@ -37,7 +35,6 @@
 	<script src="assets/js/scrollpagination.js"></script>   
 	
 	<script src="assets/js/about.js"></script>
-    <script src="assets/js/movement.js"></script>
     <script src="assets/js/logo.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/main.js"></script>
@@ -156,7 +153,7 @@
                 <img src="assets/img/menu/login-ba-sh.png"/>
                 <form>
                     <div class="member_photo">
-                        <img src="assets/img/user_images/thumb/default.png" class="member_photo" id="user_photo"/>
+                        <img src="assets/img/user_images/thumb/default.png")" class="member_photo" id="user_photo"/>
                         <p class="member_photo">
                             <p class="user_name">
                             Demo

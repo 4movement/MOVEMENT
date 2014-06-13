@@ -53,7 +53,7 @@
 						<img src="../../assets/img/movement/mo-ar.png">
 					</div><!--op_issue_data_wrapper-->
 					<div class="issue_data_wrapper">
-						<div>Reccomend</div>
+						<div>Recommend</div>
 						<li></li>
 						<li></li>
 						<li></li>

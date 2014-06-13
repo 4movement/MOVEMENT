@@ -409,7 +409,7 @@ function load_page() {
     // then javascript can access.
     // larry 20140426 opened
     $("#movement_layout").load("index.php/movement .wrapper", function() {
-        console.log("movement ini");
+		$.getScript("assets/js/movement.js");
         initial_movement();
     });
     
