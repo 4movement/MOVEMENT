@@ -13,7 +13,7 @@ class Movement extends CI_Controller {
 		$id = 307;
 		$issue = $this->issue->get_issue_detail($id);
 		$date = explode('-',$issue->date_start);
-		$date = date('m/d',mktime(0,0,0,$date[1],$date[2],$date[0]));
+		$date = date('n/d',mktime(0,0,0,$date[1],$date[2],$date[0]));
 		$data = array(
 			'intro' => $issue->intro,
 			'demand' => 'none',
