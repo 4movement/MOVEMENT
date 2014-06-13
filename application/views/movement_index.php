@@ -153,7 +153,7 @@
                 <img src="assets/img/menu/login-ba-sh.png"/>
                 <form>
                     <div class="member_photo">
-                        <img src="assets/img/user_images/thumb/default.png");?>" class="member_photo" id="user_photo"/>
+                        <img src="assets/img/user_images/thumb/default.png")" class="member_photo" id="user_photo"/>
                         <p class="member_photo">
                             <p class="user_name">
                             Demo

@@ -491,7 +491,7 @@ function initial_movement() {
 
         var movementID = $obj.attr("movement_id");
 
-        var url = "http://movement.ee.ncku.edu.tw/codeigniter/index.php/api/joinmovement";
+        var url = "http://merry.ee.ncku.edu.tw/~smart0eddie/cur/codeigniter/index.php/api/joinmovement";
         $.post(url, {
             "movementID" : movementID
         }, function(response) {
@@ -1001,13 +1001,12 @@ function movement_hash_decode() {
 }
 
 
+/** open issue data
+--------------------------**/
 $(document).ready(function(){
-	// open or close issue data
-	$(".op_issue_data_wrapper").click(function(){
-		$(".issue_data_wrapper").toggle();
-	});
-	// close detail
-	$("#detail_close").click(function(){
-		$("#movement_list_detail").toggle();
-	});
+  $(".op_issue_data_wrapper").click(function(){
+    $(".issue_data_wrapper").toggle();
+  });
 });
+
+console.log("abc")
