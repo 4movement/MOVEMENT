@@ -57,7 +57,7 @@ class Movement extends CI_Controller {
 	private function set_lists(){
 		$issues = $this->issue->get_issues();
 		$items = "					<li class=\"item\">\n";
-		$items.= "						<img src=\"" . $this->config->base_url("assets/img/sample.jpg") . "\" />\n";
+		$items.= "						<img src=\"assets/img/sample.jpg\" />\n";
 		$items.= "					</li>\n";
 		$lists = "";
 		for($i=0;$i<count($issues);$i++){
