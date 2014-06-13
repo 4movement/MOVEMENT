@@ -1,31 +1,3 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-    <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>Help</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/font.css">
-        <link rel = "stylesheet" href = "css/help.css">
-
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/turn.js"></script>
-        <script src="js/help.js"></script>
-
-    </head>
-    <body>
         <!--<img src="img/help/he-in01.jpg" class = "design_template"/>-->
         <div id="help_layout" class="layout">
             <div id="help" class="wrapper">
@@ -89,6 +61,3 @@
 
             </div>
         </div>
-
-    </body>
-</html>

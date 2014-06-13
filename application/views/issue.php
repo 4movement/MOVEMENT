@@ -1,28 +1,3 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Issue</title>
-
-        <link rel="stylesheet" href="assets/css/normalize.css">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/font.css">
-        <link rel = "stylesheet" href = "assets/css/issue.css">
-        <link rel = "stylesheet" href = "assets/js/jqvmap/jqvmap.css">
-
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
-        <script src="js/plugins.js"></script>
-
-        <script src="js/jqvmap/jquery.vmap.js"></script>
-        <script src="js/jqvmap/maps/jquery.vmap.world.js"></script>
-
-        <script src="js/main.js"></script>
-        <script src="js/issue.js"></script>
-    </head>
-    <body>
         <!--<img src="img/issue/is-in02.jpg" class = "design_template"/>-->
         <div id = "issue_layout" class = "layout">
             <div id = "issue" class = "wrapper">
@@ -77,7 +52,3 @@
 
             </div><!--issue-->
         </div><!--issue-->
-
-    </body>
-</html>
-
