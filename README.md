@@ -2,13 +2,13 @@
 
 Through MOVEMENT we wish to let more people acquire information about mass movements and thus let the voice of the people be heard. By using “issue extension” we wish to allow the user to be able to interact with mass movements from all over the world, thus increasing the movements range and scope. This is the perfect product for the mass movements that have been forgotten, the supporters who have been scattered around the world and for unity within a certain area.
 
-# Demo Website
+# Demo
 
 http://movement.ee.ncku.edu.tw/
 
-# Hackpad
+# Project Intro Website
 
-https://movement.hackpad.com/
+https://blog-movement.rhcloud.com
 
 # Contact
 
