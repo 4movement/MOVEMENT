@@ -3,15 +3,15 @@
 						<div id="detail_button_border">
 						</div>
 						<li>
-							<img src="../../assets/img/movement/mo-jo01.png" />
+							<img src="assets/img/movement/mo-jo01.png" />
 							<span class="detail_count join_count"><?= $joins ?></span>
 						</li>
 						<li>
-							<img src="../../assets/img/movement/mo-sh01.png" />
+							<img src="assets/img/movement/mo-sh01.png" />
 							<span class="detail_count support_count"><?= $support ?></span>		
 						</li>
 						<li>
-							<img src="../../assets/img/movement/mo-do01.png" />
+							<img src="assets/img/movement/mo-do01.png" />
 							<span class="detail_count donate_count"><?= $donate ?></span>		
 						</li>
 					</div><!--detail_button_wrapper-->
@@ -42,15 +42,15 @@
 						<div class="detail_nav">
 							<span class="nav_date"><?= $date ?></span>
 							<span class="nav_place">
-								<img src="../../assets/img/movement/mo-lo.png" />
+								<img src="assets/img/movement/mo-lo.png" />
 								<span><?= $city ?></span>
 							</span>
 							<span class="nav_category"><img src="" /></span>
 						</div>
 					</div><!--detail_nav_wrapper-->
-					<img id="detail_close" src="../../assets/img/movement/mo-xx01.png" />
+					<img id="detail_close" src="assets/img/movement/mo-xx01.png" />
 					<div class="op_issue_data_wrapper">
-						<img src="../../assets/img/movement/mo-ar.png">
+						<img src="assets/img/movement/mo-ar.png">
 					</div><!--op_issue_data_wrapper-->
 					<div class="issue_data_wrapper">
 						<div>Recommend</div>
