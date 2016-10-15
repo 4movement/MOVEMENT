@@ -1,4 +1,5 @@
 {
+  "repo": "4movement/MOVEMENT",
   "author": "4movement",
   "contributors": [
     "skylovely2005" , "a55660988" ,"RedBeanPieLarry", "smart0eddie", "fongwh1"
@@ -27,9 +28,6 @@
   ],
   "products": [
     "website"
-  ],
-  "projects": [
-    "movement"
   ],
   "thumbnail": "",
   "needs": [
